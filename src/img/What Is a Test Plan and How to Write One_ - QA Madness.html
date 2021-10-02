@@ -1,0 +1,4349 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="msvalidate.01" content="C21BF5816BF9C4E18F5947930DA0FC39">
+
+  <!-- Bootstrap v3.3.4 Grid Styles -->
+
+  <style>
+    .grecaptcha-badge {
+      display: none;
+    }
+  </style>
+  <!-- CRITICAL CSS -->
+  <style>
+    /* @font-face {
+      font-family: Aktiv Grotesk Corp;
+      src: url(../fonts/AktivGroteskCorp-LightItalic.eot);
+      src: local("../fonts/AktivGroteskCorp-LightItalic"), url(../fonts/AktivGroteskCorp-LightItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/AktivGroteskCorp-LightItalic.woff) format("woff"), url(../fonts/AktivGroteskCorp-LightItalic.ttf) format("truetype");
+      font-weight: 300;
+      font-style: italic
+    }
+
+    @font-face {
+      font-family: Aktiv Grotesk Corp;
+      src: url(../fonts/AktivGroteskCorp-Italic.eot);
+      src: local("../fonts/AktivGroteskCorp-Italic"), url(../fonts/AktivGroteskCorp-Italic.eot?#iefix) format("embedded-opentype"), url(../fonts/AktivGroteskCorp-Italic.woff) format("woff"), url(../fonts/AktivGroteskCorp-Italic.ttf) format("truetype");
+      font-weight: 400;
+      font-style: italic
+    }
+
+    @font-face {
+      font-family: Aktiv Grotesk Corp;
+      src: url(../fonts/AktivGroteskCorp-Medium.eot);
+      src: local("../fonts/AktivGroteskCorp-Medium"), url(../fonts/AktivGroteskCorp-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/AktivGroteskCorp-Medium.woff) format("woff"), url(../fonts/AktivGroteskCorp-Medium.ttf) format("truetype");
+      font-weight: 500;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: Aktiv Grotesk Corp;
+      src: url(../fonts/AktivGroteskCorp-Regular.eot);
+      src: local("../fonts/AktivGroteskCorp-Regular"), url(../fonts/AktivGroteskCorp-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/AktivGroteskCorp-Regular.woff) format("woff"), url(../fonts/AktivGroteskCorp-Regular.ttf) format("truetype");
+      font-weight: 400;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: Aktiv Grotesk Corp;
+      src: url(../fonts/AktivGroteskCorp-MediumItalic.eot);
+      src: local("../fonts/AktivGroteskCorp-MediumItalic"), url(../fonts/AktivGroteskCorp-MediumItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/AktivGroteskCorp-MediumItalic.woff) format("woff"), url(../fonts/AktivGroteskCorp-MediumItalic.ttf) format("truetype");
+      font-weight: 500;
+      font-style: italic
+    }
+
+    @font-face {
+      font-family: Aktiv Grotesk Corp;
+      src: url(../fonts/AktivGroteskCorp-Bold.eot);
+      src: local("../fonts/AktivGroteskCorp-Bold"), url(../fonts/AktivGroteskCorp-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/AktivGroteskCorp-Bold.woff) format("woff"), url(../fonts/AktivGroteskCorp-Bold.ttf) format("truetype");
+      font-weight: 700;
+      font-style: normal
+    }
+
+    @font-face {
+      font-family: Aktiv Grotesk Corp;
+      src: url(../fonts/AktivGroteskCorp-BoldItalic.eot);
+      src: local("../fonts/AktivGroteskCorp-BoldItalic"), url(../fonts/AktivGroteskCorp-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/AktivGroteskCorp-BoldItalic.woff) format("woff"), url(../fonts/AktivGroteskCorp-BoldItalic.ttf) format("truetype");
+      font-weight: 700;
+      font-style: italic
+    }
+
+    @font-face {
+      font-family: Aktiv Grotesk Corp;
+      src: url(../fonts/AktivGroteskCorp-Light.eot);
+      src: local("../fonts/AktivGroteskCorp-Light"), url(../fonts/AktivGroteskCorp-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/AktivGroteskCorp-Light.woff) format("woff"), url(../fonts/AktivGroteskCorp-Light.ttf) format("truetype");
+      font-weight: 300;
+      font-style: normal
+    } */
+
+    html {
+      box-sizing: border-box;
+      font-family: sans-serif;
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      -ms-overflow-style: scrollbar
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: inherit
+    }
+
+    @-ms-viewport {
+      width: device-width
+    }
+
+    header,
+    section {
+      display: block
+    }
+
+    body {
+      margin: 0;
+      font-size: .875rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff
+    }
+
+    h1,
+    h4 {
+      margin-top: 0;
+      margin-bottom: .5rem
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem
+    }
+
+    ul {
+      margin-bottom: 1rem
+    }
+
+    ul {
+      margin-top: 0
+    }
+
+    ul ul {
+      margin-bottom: 0
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects
+    }
+
+    img {
+      vertical-align: middle;
+      border-style: none
+    }
+
+    a,
+    button {
+      -ms-touch-action: manipulation;
+      touch-action: manipulation
+    }
+
+    button {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit
+    }
+
+    button {
+      overflow: visible
+    }
+
+    button {
+      text-transform: none
+    }
+
+    button,
+    html [type=button] {
+      -webkit-appearance: button
+    }
+
+    [type=button]::-moz-focus-inner,
+    button::-moz-focus-inner {
+      padding: 0;
+      border-style: none
+    }
+
+    ::-webkit-file-upload-button {
+      font: inherit;
+      -webkit-appearance: button
+    }
+
+    h1,
+    h4 {
+      margin-bottom: .5rem;
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.1;
+      color: inherit
+    }
+
+    h1 {
+      font-size: 2.5rem
+    }
+
+    h4 {
+      font-size: 1.5rem
+    }
+
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+      width: 100%
+    }
+
+    @media (min-width:576px) {
+      .container {
+        max-width: 540px
+      }
+    }
+
+    @media (min-width:768px) {
+      .container {
+        max-width: 720px
+      }
+    }
+
+    @media (min-width:992px) {
+      .container {
+        max-width: 960px
+      }
+    }
+
+    @media (min-width:1200px) {
+      .container {
+        max-width: 1140px
+      }
+    }
+
+    .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px
+    }
+
+    section.page-header .content {
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px
+    }
+
+    @media (min-width:576px) {
+      section.page-header .content {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+      }
+    }
+
+    .collapse {
+      display: none
+    }
+
+    .nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none
+    }
+
+    .navbar-collapse {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .navbar-toggler {
+      padding: .25rem .75rem;
+      font-size: 1rem;
+      line-height: 1;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: .25rem
+    }
+
+    @media (min-width:992px) {
+      .navbar-expand-lg {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
+      }
+
+      .navbar-expand-lg {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+      }
+
+      .navbar-expand-lg .navbar-collapse {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important
+      }
+
+      .navbar-expand-lg .navbar-toggler {
+        display: none
+      }
+    }
+
+    .navbar-light .navbar-toggler {
+      color: rgba(22, 24, 29, .5);
+      border-color: rgba(22, 24, 29, .1)
+    }
+
+    body {
+      background-color: #f7fafa;
+      font-family: Aktiv Grotesk Corp, sans-serif;
+      overflow-x: hidden
+    }
+
+    h1 {
+      color: #5a5966
+    }
+
+    h4 {
+      letter-spacing: -1px;
+      font-size: 1.3rem;
+      font-weight: 400
+    }
+
+    p {
+      font-size: 1rem
+    }
+
+    .content a {
+      color: #7a56f8
+    }
+
+    .started-btn {
+      display: inline-block;
+      min-width: 220px;
+      height: 40px;
+      border: 1px solid rgba(122, 86, 248, .5);
+      border-radius: 20px;
+      text-transform: uppercase;
+      font: 500 .875rem Aktiv Grotesk Corp, sans-serif;
+      color: #7a56f8;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: 1.25px;
+      box-sizing: border-box
+    }
+
+    .cta-btn {
+      display: inline-block;
+      min-width: 260px;
+      height: 60px;
+      background-color: #fc2f63;
+      border: 1px solid #fc2f63;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font: 700 .875rem Aktiv Grotesk Corp, sans-serif;
+      color: #fff !important;
+      line-height: 58px;
+      text-align: center;
+      letter-spacing: 1.25px;
+      box-sizing: border-box
+    }
+
+    header.banner {
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 101;
+      position: fixed
+    }
+
+    header.banner .brand {
+      margin: 1rem 0;
+      display: inline-block
+    }
+
+    @media (max-width:991px) {
+      header.banner .brand {
+        margin: .75rem 0;
+        position: relative;
+        z-index: 102
+      }
+    }
+
+    @media (max-width:767px) {
+      header.banner .brand {
+        margin: .5rem 0
+      }
+    }
+
+    header.banner .brand img {
+      height: auto;
+      width: 100px
+    }
+
+    @media (min-width:768px) {
+      header.banner .brand img {
+        width: 120px
+      }
+    }
+
+    @media (min-width:992px) {
+      header.banner .brand img {
+        width: 150px
+      }
+    }
+
+    header.banner .header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0 60px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      z-index: 5
+    }
+
+    @media (min-width:992px) and (max-width:1199px) {
+      header.banner .header {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 60px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around
+      }
+    }
+
+    @media (max-width:1310px) {
+      header.banner .header {
+        padding: 0 25px
+      }
+    }
+
+    header.banner .header .for-blur {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1
+    }
+
+    @media (max-width:991px) {
+      header.banner .header .for-blur {
+        z-index: 101
+      }
+    }
+
+    header.banner .header .for-blur:after {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      width: calc(100% + 50px);
+      width: -webkit-calc(100% + 50px);
+      height: calc(100% + 50px);
+      height: -webkit-calc(100% + 50px);
+      left: -25px;
+      top: -25px;
+      box-shadow: inset 0 0 0 200px hsla(0, 0%, 100%, .9);
+      filter: blur(10px);
+      -webkit-filter: blur(10px)
+    }
+
+    @media (max-width:991px) {
+      header.banner .header .for-blur:after {
+        background: #fff
+      }
+    }
+
+    header.banner .header .navigation {
+      margin: 2rem 0 1.8rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+    }
+
+    @media (min-width:992px) and (max-width:1199px) {
+      header.banner .header .navigation {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        width: 100%;
+        margin: 1rem 0
+      }
+    }
+
+    @media (max-width:991px) {
+      header.banner .header .navigation {
+        display: block;
+        margin: 1rem 0
+      }
+    }
+
+    @media (min-width:992px) and (max-width:1199px) {
+      header.banner .header .navigation .navbar-collapse {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+      }
+    }
+
+    @media (max-width:991px) {
+      header.banner .header .navigation .navbar-collapse {
+        display: block;
+        position: fixed;
+        width: 100%;
+        min-width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        top: -110%;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        overflow: auto;
+        max-height: 100vh !important;
+        background: url(../images/bg-pattern.png) 0 0 repeat;
+        z-index: -100;
+        opacity: 0;
+        padding: 5rem 1rem 2rem
+      }
+    }
+
+    @media (max-width:991px) {
+      header.banner .header .navigation .menu-main-navigation-container {
+        width: 450px;
+        margin: 0 auto
+      }
+    }
+
+    @media (max-width:767px) {
+      header.banner .header .navigation .menu-main-navigation-container {
+        width: 400px
+      }
+    }
+
+    @media (max-width:575px) {
+      header.banner .header .navigation .menu-main-navigation-container {
+        width: 100%
+      }
+    }
+
+    header.banner .header .navigation .nav>li>a {
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 1.25px;
+      font: 400 .875rem Aktiv Grotesk Corp, sans-serif;
+      color: #2a2938;
+      z-index: 10
+    }
+
+    @media (max-width:991px) {
+      header.banner .header .navigation .nav>li>a {
+        position: static;
+        font-size: 1.125rem
+      }
+    }
+
+    header.banner .header .navigation .nav>li>a:after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 2px;
+      background-color: #fc2f63;
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 0
+    }
+
+    @media (max-width:991px) {
+      header.banner .header .navigation .nav>li>a:after {
+        display: none
+      }
+    }
+
+    header.banner .header .navigation .navbar-toggler {
+      position: relative;
+      left: 0;
+      outline: none;
+      z-index: 101;
+      width: 32px;
+      height: 18px;
+      background-color: transparent;
+      border: none
+    }
+
+    @media (max-width:575px) {
+      header.banner .header .navigation .navbar-toggler {
+        right: 20px
+      }
+    }
+
+    header.banner .header .navigation .navbar-toggler .hamburger-bot-line,
+    header.banner .header .navigation .navbar-toggler .hamburger-mid-line,
+    header.banner .header .navigation .navbar-toggler .hamburger-top-line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #fc2f63;
+      position: absolute;
+      top: 0;
+      left: 0
+    }
+
+    header.banner .header .navigation .navbar-toggler .hamburger-mid-line {
+      top: 8px;
+      left: 0
+    }
+
+    header.banner .header .navigation .navbar-toggler .hamburger-bot-line {
+      top: auto;
+      bottom: 0
+    }
+
+    header.banner .header .started-btn {
+      z-index: 102;
+      position: relative
+    }
+
+    @media (max-width:767px) {
+      header.banner .header .started-btn {
+        display: none
+      }
+    }
+
+    @media (min-width:768px) {
+
+      header.banner .header .mobile-btn-wrap,
+      header.banner .header .started-btn-mobile {
+        display: none
+      }
+    }
+
+    @media (max-width:767px) {
+
+      header.banner .header .mobile-btn-wrap,
+      header.banner .header .started-btn-mobile {
+        display: inline-block
+      }
+    }
+
+    header.banner .header .mobile-btn-wrap {
+      width: 450px;
+      margin: 1.5rem auto 0;
+      text-align: center;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e3fc
+    }
+
+    @media (max-width:767px) {
+      header.banner .header .mobile-btn-wrap {
+        display: block
+      }
+    }
+
+    @media (max-width:575px) {
+      header.banner .header .mobile-btn-wrap {
+        width: 100%
+      }
+    }
+
+    header.banner .header .mobile-btn-wrap .started-btn-mobile {
+      background: #f7fafa
+    }
+
+    @media (max-width:991px) {
+      header.banner .menu-item {
+        width: 100%;
+        margin: .5rem 0
+      }
+    }
+
+    header.banner .menu-item a {
+      padding: 2rem 0
+    }
+
+    @media (max-width:1199px) {
+      header.banner .menu-item a {
+        padding: 1.2rem 0
+      }
+    }
+
+    @media (max-width:991px) {
+      header.banner .menu-item a {
+        padding: .2rem 0
+      }
+    }
+
+    @media (min-width:992px) {
+      header.banner .menu-item~.menu-item {
+        margin-left: 1.5rem
+      }
+    }
+
+    @media (min-width:1200px) {
+      header.banner .menu-item~.menu-item {
+        margin-left: 2.5rem
+      }
+    }
+
+    header.banner .menu-item-has-children {
+      overflow: visible
+    }
+
+    header.banner .menu-item-has-children>a {
+      overflow: visible
+    }
+
+    header.banner .menu-item-has-children>a:before {
+      content: "\f107";
+      width: 36px;
+      height: 23px;
+      line-height: 23px;
+      font-family: FontAwesome;
+      position: absolute;
+      top: 28px;
+      right: -29px;
+      display: inline-block;
+      color: #2a2938 !important;
+      padding: 0 5px;
+      text-align: center;
+      font-size: 1rem
+    }
+
+    @media (min-width:992px) and (max-width:1199px) {
+      header.banner .menu-item-has-children>a:before {
+        top: auto
+      }
+    }
+
+    @media (max-width:991px) {
+      header.banner .menu-item-has-children {
+        height: 23px;
+        position: relative
+      }
+    }
+
+    header.banner .menu-item-has-children>a {
+      border-bottom-color: transparent !important
+    }
+
+    @media (max-width:991px) {
+      header.banner .menu-item-has-children>a {
+        display: inline-block;
+        padding: 0
+      }
+
+      header.banner .menu-item-has-children>a:before {
+        content: "\f107";
+        width: 36px;
+        height: 23px;
+        line-height: 23px;
+        font-family: FontAwesome;
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 41px;
+        display: inline-block;
+        color: #fc2f63 !important;
+        padding: 0 5px;
+        text-align: center;
+        font-size: 1.5rem
+      }
+    }
+
+    @media (max-width:575px) {
+      header.banner .menu-item-has-children>a:before {
+        right: 35px
+      }
+    }
+
+    header.banner .menu-item-has-children .sub-menu {
+      list-style: none;
+      opacity: 0;
+      visibility: hidden
+    }
+
+    @media (max-width:991px) {
+      header.banner .menu-item-has-children .sub-menu {
+        padding: .5rem 0
+      }
+
+      header.banner .menu-item-has-children .sub-menu a {
+        text-transform: none !important;
+        padding: .35rem 1.35rem;
+        font-size: 1.1rem !important;
+        display: inline-block;
+        color: #2a2938
+      }
+    }
+
+    @media (min-width:992px) {
+      header.banner .menu-item-has-children .sub-menu {
+        -webkit-column-count: 3;
+        column-count: 3;
+        padding: 2rem calc(50vw - 480px);
+        padding: 2rem -webkit-calc(50vw - 480px);
+        position: absolute;
+        top: -100%;
+        left: 0;
+        z-index: -100;
+        box-shadow: 6px 6px 25px 0 rgba(28, 49, 45, .12);
+        width: 100vw;
+        overflow: hidden;
+        border-top: 1px solid #e5e3fc
+      }
+
+      header.banner .menu-item-has-children .sub-menu a {
+        padding: .5rem 1rem;
+        display: inline-block;
+        color: #2a2938 !important;
+        font-weight: 500;
+        margin-bottom: .55rem
+      }
+
+      header.banner .menu-item-has-children .sub-menu:after {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        width: calc(100% + 50px);
+        width: -webkit-calc(100% + 50px);
+        height: calc(100% + 50px);
+        height: -webkit-calc(100% + 50px);
+        left: -25px;
+        top: -25px;
+        box-shadow: inset 0 0 0 200px hsla(0, 0%, 100%, .9);
+        filter: blur(10px);
+        -webkit-filter: blur(10px)
+      }
+    }
+
+    @media (min-width:1200px) {
+      header.banner .menu-item-has-children .sub-menu {
+        -webkit-column-count: 4;
+        column-count: 4;
+        padding: 2rem calc(50vw - 500px);
+        padding: 2rem -webkit-calc(50vw - 500px)
+      }
+    }
+
+    header.banner .menu-item-has-children .sub-menu li {
+      margin: 0 !important
+    }
+
+    section.page-header {
+      padding-top: 82px;
+      position: relative;
+      overflow: hidden
+    }
+
+    @media (max-width:1199px) {
+      section.page-header {
+        padding-top: 134px
+      }
+    }
+
+    @media (max-width:991px) {
+      section.page-header {
+        padding-top: 63px
+      }
+    }
+
+    @media (max-width:767px) {
+      section.page-header {
+        padding-top: 55px
+      }
+    }
+
+    @media (max-width:575px) {
+      section.page-header .content {
+        text-align: center
+      }
+    }
+
+    section.page-header h1 {
+      display: block;
+      padding: 0 0 1.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+      font: 300 4rem Aktiv Grotesk Corp, sans-serif;
+      color: #2a2938;
+      position: relative
+    }
+
+    @media (max-width:767px) {
+      section.page-header h1 {
+        font-size: 3.2rem
+      }
+    }
+
+    @media (max-width:575px) {
+      section.page-header h1 {
+        font-size: 2.6rem
+      }
+    }
+
+    @media (max-width:360px) {
+      section.page-header h1 {
+        font-size: 2.5rem;
+        line-height: 1.15
+      }
+    }
+
+    section.page-header h1:after {
+      content: "";
+      display: inline-block;
+      width: 68px;
+      height: 2px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fc2f63
+    }
+
+    @media (max-width:575px) {
+      section.page-header h1:after {
+        left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%)
+      }
+    }
+
+    section.page-header.with-image {
+      padding: 230px 0 160px
+    }
+
+    @media (max-width:1199px) {
+      section.page-header.with-image {
+        padding: 200px 0 80px
+      }
+    }
+
+    @media (max-width:991px) {
+      section.page-header.with-image {
+        padding: 110px 0 60px
+      }
+    }
+
+    @media (max-width:575px) {
+      section.page-header.with-image {
+        padding: 90px 0 50px
+      }
+    }
+
+    section.page-header.with-image h1 {
+      max-width: 520px
+    }
+
+    @media (max-width:575px) {
+      section.page-header.with-image h1 {
+        max-width: unset
+      }
+    }
+
+    section.page-header.with-image .container {
+      position: relative;
+      z-index: 2
+    }
+
+    section.page-header.with-image .description {
+      max-width: 520px;
+      padding-top: .25rem;
+      font: 400 1.5rem Aktiv Grotesk Corp, sans-serif;
+      color: #2a2938;
+      line-height: 1.25
+    }
+
+    @media (max-width:575px) {
+      section.page-header.with-image .description {
+        font-size: 1.25rem
+      }
+    }
+
+    section.page-header.with-image .cta-btn {
+      margin-top: 40px
+    }
+
+    @media (max-width:575px) {
+      section.page-header.with-image .cta-btn {
+        margin-top: 25px
+      }
+    }
+
+    section.page-header .header-bg-block {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 115%;
+      background-size: cover !important
+    }
+
+    .subtitle {
+      font: 500 .875rem Aktiv Grotesk Corp, sans-serif;
+      color: #fc2f63 !important;
+      text-transform: uppercase;
+      letter-spacing: 1px
+    }
+
+    .section.benefits {
+      background: #fff;
+      padding: 140px 0 90px
+    }
+
+    @media (max-width:991px) {
+      .section.benefits {
+        padding: 110px 0 70px
+      }
+    }
+
+    @media (max-width:767px) {
+      .section.benefits {
+        padding: 80px 0 30px
+      }
+    }
+
+    .section.benefits .benefits_block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap
+    }
+
+    .section.benefits .benefits-item {
+      display: inline-block;
+      width: 25%;
+      padding-bottom: 3rem;
+      padding-right: 1rem
+    }
+
+    @media (max-width:991px) {
+      .section.benefits .benefits-item {
+        width: 50%;
+        text-align: center
+      }
+    }
+
+    @media (max-width:575px) {
+      .section.benefits .benefits-item {
+        width: 100%;
+        padding-right: 0;
+        max-width: 310px;
+        margin-left: auto;
+        margin-right: auto
+      }
+    }
+
+    .section.benefits .icon {
+      height: 95px;
+      margin-bottom: 2rem
+    }
+
+    .section.benefits .icon img {
+      max-height: 100%
+    }
+
+    .section.benefits .title {
+      font: 600 .875rem Aktiv Grotesk Corp, sans-serif;
+      color: #2a2938;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px
+    }
+
+    .section.testimonials .client_image_url {
+      display: none;
+      width: 0;
+      height: 0
+    }
+  </style>
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+
+  <!-- Header CSS (First Sections of Website: compress & paste after release from _header.css here) -->
+
+  <!-- 
+  <link rel='stylesheet' id='sage/css-css' href='https://www.qamadness.com/wp-content/themes/qamadness/dist/styles/header-bootstrap.css' type='text/css' media='all' />
+
+  <link rel='stylesheet' id='sage/css-css' href='https://www.qamadness.com/wp-content/themes/qamadness/dist/styles/allsolutions.css' type='text/css' media='all' />
+
+  <link rel='stylesheet' id='sage/css-css' href='https://www.qamadness.com/wp-content/themes/qamadness/dist/styles/header-grid.css' type='text/css' media='all' />
+
+  <link rel='stylesheet' id='sage/css-css' href='https://www.qamadness.com/wp-content/themes/qamadness/dist/styles/landing.css' type='text/css' media='all' /> -->
+
+  <link href="./What Is a Test Plan and How to Write One_ - QA Madness_files/css2" rel="stylesheet">
+
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>What Is a Test Plan and How to Write One? - QA Madness</title>
+	<meta name="description" content="Well-written documentation lies at the core of an efficient QA process. Find out how to structure a Test Plan in the best way!">
+	<link rel="canonical" href="http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="What Is a Test Plan and How to Write One? - QA Madness">
+	<meta property="og:description" content="Well-written documentation lies at the core of an efficient QA process. Find out how to structure a Test Plan in the best way!">
+	<meta property="og:url" content="http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/">
+	<meta property="og:site_name" content="QA Madness">
+	<meta property="article:published_time" content="2021-03-04T10:51:31+00:00">
+	<meta property="article:modified_time" content="2021-05-19T09:27:01+00:00">
+	<meta property="og:image" content="http://www.qamadness.com/wp-content/uploads/2021/03/shutterstock_15387334281-scaled.jpg">
+	<meta property="og:image:width" content="2560">
+	<meta property="og:image:height" content="892">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Anna Senchenko">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="10 minutes">
+	<script type="text/javascript" async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-nQIWhE7WOxHTiNyNCmC5+GFD/CfTvFJOw8ExBl8VtC8dRdbvikyVIRtwC0cO8/2e"></script><script type="text/javascript" async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-nQIWhE7WOxHTiNyNCmC5+GFD/CfTvFJOw8ExBl8VtC8dRdbvikyVIRtwC0cO8/2e"></script><script type="text/javascript" async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/L.js.download"></script><script src="./What Is a Test Plan and How to Write One_ - QA Madness_files/lftracker_v1_bElvO73A0GKaZMqj.js.download"></script><script async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/qevents.js.download"></script><script async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/insight.min.js.download"></script><script type="text/javascript" async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/analytics.js.download"></script><script src="./What Is a Test Plan and How to Write One_ - QA Madness_files/3076879.js.download" type="text/javascript" id="cookieBanner-3076879" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="3076879" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./What Is a Test Plan and How to Write One_ - QA Madness_files/conversations-embed.js.download" type="text/javascript" id="hubspot-messages-loader" data-loader="hs-scriptloader" data-hsjs-portal="3076879" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="https://js.hs-analytics.net/analytics/1630101900000/3076879.js" type="text/javascript" id="hs-analytics"></script><script src="./What Is a Test Plan and How to Write One_ - QA Madness_files/collectedforms.js.download" type="text/javascript" id="CollectedForms-3076879" crossorigin="anonymous" data-leadin-portal-id="3076879" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="3076879" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script type="text/javascript" async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-nQIWhE7WOxHTiNyNCmC5+GFD/CfTvFJOw8ExBl8VtC8dRdbvikyVIRtwC0cO8/2e"></script><script async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/gtm.js.download"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.qamadness.com/#website","url":"https://www.qamadness.com/","name":"QA Madness","description":"Software Testing Company - QA Madness. Quality Assurance Outsourcing Services","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.qamadness.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/#primaryimage","inLanguage":"en-US","url":"http://www.qamadness.com/wp-content/uploads/2021/03/shutterstock_15387334281-scaled.jpg","contentUrl":"http://www.qamadness.com/wp-content/uploads/2021/03/shutterstock_15387334281-scaled.jpg","width":2560,"height":892,"caption":"The Definition, Role and Structure Of The Test Plan"},{"@type":"WebPage","@id":"http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/#webpage","url":"http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/","name":"What Is a Test Plan and How to Write One? - QA Madness","isPartOf":{"@id":"https://www.qamadness.com/#website"},"primaryImageOfPage":{"@id":"http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/#primaryimage"},"datePublished":"2021-03-04T10:51:31+00:00","dateModified":"2021-05-19T09:27:01+00:00","author":{"@id":"https://www.qamadness.com/#/schema/person/3bc041819f9e8b3b3a17b146f12dbab1"},"description":"Well-written documentation lies at the core of an efficient QA process. Find out how to structure a Test Plan in the best way!","breadcrumb":{"@id":"http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/"]}]},{"@type":"BreadcrumbList","@id":"http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.qamadness.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"http://www.qamadness.com/blog/"},{"@type":"ListItem","position":3,"name":"What Is a Test Plan and How to Write One?"}]},{"@type":"Person","@id":"https://www.qamadness.com/#/schema/person/3bc041819f9e8b3b3a17b146f12dbab1","name":"Anna Senchenko","image":{"@type":"ImageObject","@id":"https://www.qamadness.com/#personlogo","inLanguage":"en-US","url":"http://1.gravatar.com/avatar/4c3b98b0349e408c4a85fc3de9b5533c?s=96&d=mm&r=g","contentUrl":"http://1.gravatar.com/avatar/4c3b98b0349e408c4a85fc3de9b5533c?s=96&d=mm&r=g","caption":"Anna Senchenko"},"url":"http://www.qamadness.com/author/anna-senchenko/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="QA Madness » What Is a Test Plan and How to Write One? Comments Feed" href="http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.qamadness.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./What Is a Test Plan and How to Write One_ - QA Madness_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="https://api.w.org/" href="http://www.qamadness.com/wp-json/"><link rel="alternate" type="application/json" href="http://www.qamadness.com/wp-json/wp/v2/posts/17336"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.qamadness.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.qamadness.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.7.2">
+<link rel="shortlink" href="http://www.qamadness.com/?p=17336">
+<link rel="alternate" type="application/json+oembed" href="http://www.qamadness.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.qamadness.com%2Fwhat-is-a-test-plan-and-how-to-write-one%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://www.qamadness.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.qamadness.com%2Fwhat-is-a-test-plan-and-how-to-write-one%2F&amp;format=xml">
+			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v8.4.90-->
+			<script type="text/javascript">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "blog-post"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+						<script>
+				(function() {
+					var hbspt = window.hbspt = window.hbspt || {};
+					hbspt.forms = hbspt.forms || {};
+					hbspt._wpFormsQueue = [];
+					hbspt.enqueueForm = function(formDef) {
+						if (hbspt.forms && hbspt.forms.create) {
+							hbspt.forms.create(formDef);
+						} else {
+							hbspt._wpFormsQueue.push(formDef);
+						}
+					}
+					if (!window.hbspt.forms.create) {
+						Object.defineProperty(window.hbspt.forms, 'create', {
+							configurable: true,
+							get: function() {
+								return hbspt._wpCreateForm;
+							},
+							set: function(value) {
+								hbspt._wpCreateForm = value;
+								while (hbspt._wpFormsQueue.length) {
+									var formDef = hbspt._wpFormsQueue.shift();
+									if (!document.currentScript) {
+										var formScriptId = 'leadin-forms-v2-js';
+										hubspot.utils.currentScript = document.getElementById(formScriptId);
+									}
+									hbspt._wpCreateForm.call(hbspt.forms, formDef);
+								}
+							},
+						});
+					}
+				})();
+			</script>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="amphtml" href="http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/amp/"><link rel="icon" href="http://www.qamadness.com/wp-content/uploads/2018/11/favicon.png" sizes="32x32">
+<link rel="icon" href="http://www.qamadness.com/wp-content/uploads/2018/11/favicon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="http://www.qamadness.com/wp-content/uploads/2018/11/favicon.png">
+<meta name="msapplication-TileImage" content="http://www.qamadness.com/wp-content/uploads/2018/11/favicon.png">
+		<style type="text/css" id="wp-custom-css">
+			.amp-wp-comments-link {display:none;}
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+}
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: -54px;
+    top: -130px!important; /* Положение подсказки */
+	border-radius: 10px;
+    background: #8c85d7; /* Синий цвет фона */
+	line-height: 1.2!important;
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 0 5px 30px 0 rgba(36,23,228,.2); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+} 
+[data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+	z-index: 1;
+}
+.threed {
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+  }
+.threed:hover {
+    box-shadow:
+      1px 1px #bbb6ff,
+      2px 2px #bbb6ff,
+      3px 3px #bbb6ff,
+      4px 4px #bbb6ff,
+      5px 5px #bbb6ff,
+      6px 6px #bbb6ff,
+      7px 7px #bbb6ff;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+.section {background-color: #fff!important;}
+.section-title {margin-bottom: 2.0rem!important;}
+.padding-top-110 {padding-top:190px;}
+.padding-top-90 {padding-top:90px;}
+.padding-12 {padding-top: 12px;}
+.padding-top-190 {padding-top:190px;}
+.padding-top-100 {padding-top:100px;}
+.padding-top-70 {padding-top: 70px;}
+.padding-top-80 {
+    padding-top: 80px;
+}
+
+.container-manual {margin-top: 160px; margin-bottom:160px;}
+.section-title-center {
+    position: relative;
+    padding-bottom: 1.25rem;
+    margin-bottom: 5.0rem!important;
+    color: #2a2938;
+    text-align: center;
+}
+.description-left {
+    color: #2a2938;
+    font: 400 1.3rem Aktiv Grotesk Corp,sans-serif;
+    line-height: 1.25;
+}
+.description-center {
+    text-align: center;
+    margin-top: -4.0rem!important;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2a2938!important;
+    font: 400 1.3rem Aktiv Grotesk Corp,sans-serif!important;
+    line-height: 1.25!important;
+}
+.section-title-center:after {
+    content: "";
+    display: inline-block;
+    width: 68px;
+    height: 2px;
+    background-color: #fc2f63;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+}
+.section-title-left { position: relative;
+    padding-bottom: 1.25rem;
+    margin-bottom: 5.0rem!important;
+    color: #2a2938;
+    text-align: left;}
+.section-title-left:after {
+    content: "";
+    display: inline-block;
+    width: 68px;
+    height: 2px;
+    background-color: #fc2f63;
+    position: absolute;
+    top: 100%;
+    left: 6%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+}
+
+/* Wearables Testing */
+.wearables-devices-title {
+	padding: 10px 0px 0px 0px!important;
+    font: 500 .875rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.wearable-devices-block {padding:0;}
+.mobile-app-box-text {
+    font: 400 1rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    line-height: 1.2!important;
+    text-align: left;
+	padding-right: 20px;
+}
+.wearable-devices-blocks {padding-top:60px;}
+.step-title-wearable-landing {
+    text-transform: uppercase;
+    font: 500 .875rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    letter-spacing: 1.25px;
+    margin-bottom: 2.0rem;
+    position: relative;
+    z-index: 3;
+    padding-top: 2.95rem;
+    min-width: 110px;
+}
+.step-title-wearable-landing:before {
+    counter-increment: a;
+    content: counter(a);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 8px;
+    left: 133px;
+    z-index: -1;
+    font: 700 5rem Aktiv Grotesk Corp,sans-serif;
+    color: #e5e3fc;
+}
+.section.how_we_test .container .test-steps {
+    margin-top: 2rem;
+    counter-reset: a;
+}
+.line-separater{position: absolute;
+    width: 27px;
+    left: 200px;
+    top: 10px;}
+.section.how_we_test .description-wearable {
+    margin-top: 1.5rem;
+    min-height: 94px;
+}
+.icon-wearable {margin-left:18%;}
+/* Wearables Testing - End */
+/* E-commerce page */
+.magento-challenges-list ul li:before {
+    width: 1.2em;
+    height: 1.2em;
+    content: '';
+    background: url(http://www.qamadness.com/wp-content/media/site-icons/green-tip.svg) no-repeat center center/cover;
+    position: absolute;
+    left: 0px;
+    margin-top: 0.2em;
+    opacity: 100%;
+}
+.ecom-peculiarities-list img {text-align: center!important;
+    width: 100%!important;
+    display: block!important;
+	}
+.description-underline-left {margin-left: auto;
+    margin-right: auto;
+    color: #2a2938!important;
+    font: 400 1.3rem Aktiv Grotesk Corp,sans-serif!important;
+    line-height: 1.25!important;}
+.eshop-things-item{margin: 6px -8px;;
+    background: #ececec;
+    border-radius: 10px!important;
+    padding: 10px 15px;
+	min-height: 100px;
+    }
+.eshop-things-item p {
+    width: 80%;
+    font: 500 1rem Aktiv Grotesk Corp,sans-serif!important;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+	top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+.eshop-things-bottom {padding: 60px 25px 60px 22px!important;}
+/* E-commerce page - End */
+/* Steps */
+.step-title-counter {counter-reset: a;margin-bottom: 90px;padding-top: 70px;}
+.step-title-landing-long:before {
+    counter-increment: a;
+    content: counter(a);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -73px;
+    left: 10px;
+    z-index: 1;
+    font: 400 4rem Aktiv Grotesk Corp,sans-serif;
+    color: #785cd6;
+}
+.step-title-landing-long:after {
+	content: "";
+    border-radius: 50%;
+    margin: 0;
+    background: #dfdff9;
+    padding: 0;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: -51px;
+    left: 14px;
+}
+.step-title-landing-round1{
+ 	border-radius: 50%;
+    margin: 0;
+    background: mistyrose;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -70px;
+}
+.step-title-landing-text h4 {
+	font-weight: 600!important;
+    font-size: 1.2rem!important;
+    letter-spacing: 0.2px!important;
+    padding-top: 24px!important;
+		min-height: 50px;}
+.step-title-landing-text p {
+	line-height: 1.0!important;
+    padding-top: 6px!important;
+    letter-spacing: 0.4px!important;}
+.step-arrow-right {position: absolute;
+    top: -49px;
+    left: 62%;
+    font: 400 2rem Aktiv Grotesk Corp,sans-serif!important;
+    color: #ffa7be!important;}
+/* Steps - End */
+/* Localization Testing */
+.localization-needs-box {padding-top: 1em;margin: 0 10px!important;
+  background: #dbdcf8!important;
+  border-radius: 10px!important;
+min-height:300px!important;}
+.localization-needs-box p {margin:0!important;}
+.localization-needs-boxj:before {
+  content: "";
+  width: 100%!important;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: .3s;
+}
+.localization-needs-box:hover:before {
+  box-shadow: 0 20px 30px 0 rgb(36 23 228 / 10%)!important;
+}
+.localization-needs-icon {
+  text-align: center!important;
+  width: 32%!important;
+  display: block!important;
+}
+.localization-needs-title {
+  font: 700 1.3rem Aktiv Grotesk Corp,sans-serif!important;
+padding: 0.6em 0!important;
+}
+.localization-needs-description {line-height: 1.2!important;}
+.localization-needs-box ul {padding:0!important;list-style-type: none!important;}
+.localization-needs-box li {line-height: 1.3!important;}
+.localization-needs-content{margin: 1em 0em 0em 3em!important;}
+.localization-services-box {padding-top: 1em;margin: 0 10px!important;
+  background: #fff!important;
+  border-radius: 10px!important;
+min-height:230px!important;
+box-shadow: 0 20px 30px 0 rgb(36 23 228 / 10%);}
+.localization-services-box p {margin:0!important;}
+.localization-services-boxj:before {
+  content: "";
+  width: 100%!important;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: .3s;
+}
+.localization-services-box:hover:before {
+  box-shadow: 0 20px 30px 0 rgb(36 23 228 / 10%)!important;
+}
+.localization-services-icon {
+  text-align: center!important;
+  width: 32%!important;
+  display: block!important;
+}
+.localization-services-title {
+  font: 700 1.3rem Aktiv Grotesk Corp,sans-serif!important;
+padding: 0.6em 0!important;
+}
+.localization-services-description {line-height: 1.2!important;}
+.localization-services-box ul {padding:0!important;list-style-type: none!important;}
+.localization-services-box li {line-height: 1.3!important;}
+.localization-services-content{margin: 1em 0em 0em 3em!important;}
+.step-title-localization{width:80%!important;}
+.step-title-localization-555:after{content: "\1F812";
+  position: absolute;
+  margin: 2px 5px 0 0;
+  width: 50px;
+  height: 50px;
+  right: -11px;
+  top: 55%;}
+.step-title-localization:after{
+	content: '';
+	background: url(../wp-content/themes/qamadness/dist/images/arrow-line.svg) center center no-repeat;
+  position: absolute;
+  margin: 2px 5px 0 0;
+  width: 70px;
+  height: 9px;
+  right: 4px;
+  top: 32%;}
+.step-title-localizatio-666n:after{
+	content: '';
+    display: inline-block;
+    width: 70px;
+    height: 9px;
+    position: absolute;
+    background: url(../images/arrow-line.svg) center center no-repeat;
+    background-size: contain!important;
+    top: 3.1rem;
+    left: auto;
+    right: 1rem;
+    z-index: -1;}
+/* Localization Testing - End */
+
+/* Accesibility Testing */
+.accessibility-services ul{
+  list-style-type: none;
+  margin: 0px 0 16px 0;
+  list-style: none;}
+  .accessibility-services ul li {min-height:54px!important;}
+  .accessibility-services ul li:before {
+  width: 2em;
+  height: 2em;
+  content: '';
+  background: url(http://www.qamadness.com/wp-content/media/site-icons/round-tip.svg) no-repeat center center/cover;
+  position: absolute;
+  left: 0px;
+  margin-top: 0.2em;
+  opacity: 70%;}
+/* Accesibility Testing - End */
+/*Knowledge base */
+.kb-article-content{}
+.kb-article-content img {max-width: 100%;}
+h1.kb-article-title {font-weight: 700!important; font-size: 46px!important; letter-spacing: -0.6px!important; color: #383838!important;}
+.kb-article-content ol li{;}
+.kb-article-content ol, .kb-article-content ul {}
+/* BLOG */
+.text-highlight {color:#fc2f63!important;font-size:1.2em!important;font-weight:700!important;letter-spacing: -1.5px!important;}
+.art-cta-block {
+  display: block;
+  position: relative;
+  background: #e2e2e2;
+  padding: 30px 26px;
+  text-align: center;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 60px 0;
+  box-shadow: 0px 8px 30px 2px rgb(36 23 228 / 16%);}
+  .art-cta-block p {line-height: 1.5em!important;font: 500 1.8em Aktiv Grotesk Corp,sans-serif!important;margin:0!important;}
+  .art-cta-block a {margin: 30px 0px 0px!important;}
+  .cta-btn-white{
+  display: inline-block;
+      min-width: 260px;
+      height: 60px;
+      background-color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font: 700 .875rem Aktiv Grotesk Corp,sans-serif;
+      color: #000!important;
+      line-height: 58px;
+      text-align: center;
+      letter-spacing: 1.25px;
+      box-sizing: border-box;
+      transition: .2s;
+  }
+  .cta-btn-white:hover {
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+      box-shadow: 0 5px 30px 0 rgb(76 47 252 / 45%);
+  }
+  .art-cta-block2:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    height: 1000px;
+    width: 1000px;
+    background-size: contain;
+    background-image: url("http://www.qamadness.com/wp-content/themes/qamadness/dist/images/site-icons/art-icons-01.png");
+  }
+  .cta-banner-1{
+  position: relative;
+  background-size: cover;
+  }
+  .cta-banner-2{
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1528728935509-22fb14722a30?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1920&q=80);
+  background-size: cover;
+  color:#fff;
+  }
+  .cta-banner-3{
+  position: relative;
+  background-color:#444;
+  background-size: cover;
+  color:#fff;
+  }
+  .cta-banner-4{
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  color:#fff;
+  }
+  .cta-banner-5{
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1560780552-d08f6152c7aa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80);
+  background-size: cover;
+  color:#fff;
+  }
+  .art-cta-block > * {z-index: 100;}
+  .cta-banner:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(120deg,#eaee44,#33d0ff);
+      background-color: #333;
+      opacity: .7;
+  z-index: 1;
+  }
+  .wptmtable table {margin-bottom: 80px!important;}
+  .nav-art-link{ position: absolute; margin-top: -130px;}
+  p.link-icon, a.link-icon {
+    position: relative;
+    font-size: 1.4em!important;
+    line-height: 1.2em!important;
+    font-weight: 500!important;
+  }
+  a.icon-case-study{display: block;text-align: center;border-radius: 12px;padding: 22px 16px;margin: 50px 0px;box-shadow: 0px 8px 30px 2px rgb(36 23 228 / 16%);}
+  a.icon-case-study:before {
+    content: "Case Study:";
+    display: inline-block;
+    color: #3f3b4e;
+    padding-right: 8px;
+  }
+a.icon-case-study:after {}
+
+  p.icon-knowledge{padding-left: 28px;margin: 30px 0!important;}
+  p.icon-knowledge:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    display: inline-block;
+    margin-right:5px;
+    height: 30px;
+    width: 20px;
+    background-size: contain;
+    background-image: url("http://www.qamadness.com/wp-content/themes/qamadness/dist/images/site-icons/art-icons-03.png");
+  }
+  p.icon-download{padding-left: 30px;margin: 30px 0!important;}
+  p.icon-download:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    height: 30px;
+    width: 24px;
+    background-size: contain;
+    background-image: url("http://www.qamadness.com/wp-content/themes/qamadness/dist/images/site-icons/art-icons-01.png");
+  }
+  p.icon-article{padding-left: 0px;margin: 30px 0!important;}
+  .icon-article a{padding-left: 6px;}
+  p.icon-article:before {
+    content: "Related:";
+    display: inline-block;
+    font-weight: 700;
+  }
+  .art-def-block-title {line-height: 1.2em!important;font: 500 1.6em Aktiv Grotesk Corp,sans-serif!important;margin:0!important;padding-bottom: 8px!important;}
+  .art-def-block h2 {line-height: 1.2em!important;font: 500 1.6em Aktiv Grotesk Corp,sans-serif!important;margin:0!important;padding-bottom: 8px!important;}
+  .art-def-block p {line-height: 1.0em!important;font: 400 1.2em Aktiv Grotesk Corp,sans-serif!important;margin:0!important;}
+  .art-def-block{
+  display: block;
+  position: relative;
+  background: #e2e2e2;
+  padding: 30px 29px 50px;
+  text-align: left;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 60px 0;
+  box-shadow: 0px 8px 30px 2px rgb(36 23 228 / 16%);}
+  .art-def-block:after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+      right: -42px;
+    display: inline-block;
+    margin-right:5px;
+    height: 64px;
+      width: 200px;
+    background-size: contain;
+    background-image: url("http://www.qamadness.com/wp-content/themes/qamadness/dist/images/site-icons/mount.svg");}
+    .article table {margin-bottom: 90px!important;}
+    .article-content .color-purple, .kb-article-content .color-purple{color:#7A56F8!important;}
+    .article-content .color-red{color:#FC2F63!important;}
+    .article-content .bold{font-weight: 600!important;}
+    .article-content h2, .kb-article-content h2{margin: 40px 0 16px!important;letter-spacing:-0.6px!important;}
+    .article-content h3, .kb-article-content h3 {font: 600 2rem Aktiv Grotesk Corp,sans-serif!important;text-transform:uppercase!important;margin: 30px 0 10px!important;letter-spacing:-0.4px!important;}
+    .article-content h4, .kb-article-content h4 {font: 300 2rem Aktiv Grotesk Corp,sans-serif!important;letter-spacing: -0.8px!important;margin: 38px 0 12px!important;}
+    .article-content h5, .kb-article-content h5 {font: 600 1.4rem Aktiv Grotesk Corp,sans-serif!important;text-transform:uppercase!important;margin: 30px 0 10px!important;}
+    .article-content h6, .kb-article-content h6 {font: 400 1.4rem Aktiv Grotesk Corp,sans-serif!important;margin: 30px 0 10px!important;font-style: italic!important;}
+    .madart-mark{background-color:#ddd3fd;}
+    mark{background-color:#ddd3fd;}
+    .ludwig {
+      position: relative;
+      padding-left: 0.6em;
+    margin-left: 2px;
+      border-left: 3px solid #7A56F8;
+    font: 400 1.0rem Aktiv Grotesk Corp,sans-serif!important;
+    font-style: italic!important;
+        background: rgba(0,0,0,0.1);
+        padding: 8px 0px 8px 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .ludwig p {margin-bottom: 0!important;line-height: 1.3em;
+        letter-spacing: 0.1px;}
+    .madart-quot1 {}
+    .madart-listnum1 {}
+    .madart-listnum2 p {
+      border-top: 2px dashed;
+      border-color: #7A56F8!important;
+      margin:0; padding: 30px;
+      counter-increment: section;
+      position: relative;
+       margin-bottom: 0rem!important;
+    }
+    .madart-listnum2 p:nth-child(even):before {
+      content: counter(section);
+      right: 100%; 
+      margin-right: -20px;
+      position: absolute;
+      border-radius: 50%;
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+      background-color: #7A56F8;
+      text-align:center;
+      color: white;
+      font-size: 110%;
+    }
+    .madart-listnum2 p:nth-child(odd):before {
+      content: counter(section);
+      left: 100%; 
+      margin-left: -20px;
+      position: absolute;
+      border-radius: 50%;
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+      background-color: #7A56F8;
+      text-align:center;
+      color: white;
+      font-size: 110%;
+    }
+    .madart-listnum2 p:nth-child(even) {
+      border-left: 2px dashed;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      margin-right: 30px; 
+      padding-right: 0;
+    }
+    .madart-listnum2 p:nth-child(odd) {
+      border-right: 2px dashed;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      margin-left: 30px; 
+      padding-left: 0;
+    }
+    .madart-listnum2 p:first-child {
+      border-top: 0;
+      border-top-right-radius:0;
+      border-top-left-radius:0;
+    }
+    
+    p:last-child {
+      border-bottom-right-radius:0;
+      border-bottom-left-radius:0;
+    }
+    .madart-quot1 {
+      display: inline-block;
+      margin: 1em;
+      overflow: hidden;
+    }
+    .madart-quot1 blockquote {
+      background-color: #fff;
+      border: solid 2px #757575;
+      display: inline-block;
+      margin: 0;
+      padding: 1em;
+      position: relative;
+    }
+    .madart-quot1 blockquote:before {
+      background-color: #fff;
+      bottom: -10%;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: -10%;
+      transform: rotate(-15deg) skew(5deg);
+    }
+    .madart-quot1 blockquote cite {
+      display: block;
+      font-style: italic;
+      text-align: right;
+    }
+    .madart-quot1 blockquote cite:before {
+      content: "- ";
+    }
+    .madart-quot1 blockquote > * {
+      position: relative;
+      z-index: 1;
+    }
+    .madart-quot2 {
+        padding: 60px 30px 40px;
+        position: relative;
+        line-height: 1.2!important;
+    }
+    .madart-quot2 p {
+        font-family: "Utopia-italic";
+        font-size: 35px;
+        font-weight: 700px;
+        text-align: center;
+    }
+    .madart-quot2:before {
+      position: absolute;
+      font-family: 'FontAwesome';
+      top: 7px;
+      left:0px;
+      content:"\f10d";
+      font-size: 150px;
+      color: rgba(0,0,0,0.1);
+    }
+    .madart-quot2::after {
+        content: "";
+        top: 20px;
+        left: 50%;
+        margin-left: -100px;
+        position: absolute;
+        border-bottom: 3px solid #7A56F8;
+        height: 3px;
+        width: 200px;
+    }
+    .article-content ul, .kb-article-content ul {
+    line-height: 1.5em;
+    margin: 5px 0 15px;
+    padding: 0;
+    font-size: 1rem!important;
+    }
+    .article-content ul li, .kb-article-content ul li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 22px;
+    }
+    .article-content ol, .kb-article-content ol {
+    line-height: 1.5em;
+    margin: 5px 0 15px;
+    padding: 0;
+    font-size: 1rem!important;
+    }
+    .article-content ol li, .kb-article-content ol li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 0px;
+    margin-bottom: 5px;
+    }
+    .article-content .one, .kb-article-content .one{ list-style-type: disc; }
+    .article-content .two, .kb-article-content .two{ list-style-type: circle; }
+    .article-content .three, .kb-article-content .three{ list-style-type: square; }
+    .article-content .four, .kb-article-content .four{ list-style-type: none; }
+    li.circle-checkmark::before, .circle-checkmark li::before {
+      content: ""; 
+      position: absolute; 
+      left: 2px; 
+      top: 5px;
+      border: solid 8px #9d81ff;
+      border-radius: 8px;
+    }
+    li.circle-checkmark::after, .circle-checkmark li::after {
+      content: ""; 
+      position: absolute; 
+      left: 7px;
+      top: 8px;
+      width: 5px;
+      height: 9px;
+      border: solid #ffffff; 
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+    li.checkmark::before, .checkmark li::before {
+    content: ""; 
+    position: absolute; 
+    left: 2px;
+    top: 3px;
+    width: 6px;
+    height: 13px;
+    border: 5px solid #3bb06d;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    }
+    li.triangle::before, .triangle li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 12px solid #7A56F8;
+    }
+    li.plus::before, .plus li::before  {
+      content: "";
+      position: absolute;
+      background: #1eda84;
+      left: 4px;
+      top: 11px;
+      height: 3px; 
+      width: 11px;
+    }
+    
+    li.plus::after, .plus li::after { 
+      content: ""; 
+      position: absolute; 
+      background: #1eda84;
+      left: 8px;
+      top: 7px;
+      height: 11px;
+      width: 3px;
+    }
+    li.line::before, .line li::before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 12px;
+      width: 8px;
+      display: block;
+      border-top: 3px solid #7A56F8;
+    }
+    li.cross::before, .cross li::before {
+      content: "";
+      position: absolute;
+      height: 15px;
+      border-left: 3px solid #ff2020;
+      transform: rotate(45deg);
+      top: 5px;
+      left: 5px;
+    }
+    li.cross::after, .cross li::after {
+      content: "";
+      position: absolute;
+      height: 15px;
+      border-left: 3px solid #ff2020;
+      transform: rotate(-45deg);
+      top: 4px;
+      left: 5px;
+    }
+    li.arrow::before, .arrow li::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 9px;
+      height: 7px;
+      width: 7px;
+      border: 1px solid #7A56F8;
+      border-width: 3px 3px 0 0;
+      transform: rotate(45deg);
+    }
+    ul.round {display: block;margin-left: 0px;}
+    ul.round li {display: block;position: relative;}
+    ul.round li:not(:last-child) {margin-bottom: 4px;}
+    ul.round li:before {
+      content: "";
+      position: absolute;
+      top: 0.6em;
+      left: 2px;
+      background: linear-gradient(45deg, #FC2F63, #7A56F8);
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+    }
+    ol {line-height: 2;}
+    ol li {list-style-type: none;counter-increment: item;}
+    ol.simple-num li:before {
+      content: counter(item) ". ";
+      color: #7A56F8;
+      font-weight: 600!important;
+    }
+    ol.indie-num li:before {
+      content: counter(item);
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      font-family: "Indie Flower", cursive;
+      margin-right: 5px;
+      background-color: #7A56F8;
+      color: #f8f8f8;
+      font-weight: bold;
+      font-size: 120%;
+      padding: 0 4px 8px;
+      border-radius: 4px;
+      line-height: 1.3;
+    }
+    ol.round-num {
+      counter-reset: li; 
+      list-style: none; 
+      padding: 0;
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+    
+    ol.round-num p {
+      position: relative;
+      display: block;
+      padding: .4em .4em .4em 2em;
+      margin: .5em 0;
+      background: #e1e1e1;
+      color: #444;
+      text-decoration: none;
+      border-radius: .3em;
+      transition: .3s ease-out;
+    margin-bottom: 0.5rem!important;
+    }
+    ol.round-num p:hover { background: #eaeaea; }
+    ol.round-num p:hover:before { transform: rotate(360deg); }
+    ol.round-num p:before {
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      left: -1.3em;
+      top: 50%;
+      margin-top: -1.5em;
+      background: #bfadff;
+      height: 3em;
+      width: 3em;
+      line-height: 2.4em;
+      border: .3em solid #fff;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 2em;
+      transition: all .3s ease-out;
+    }
+/* BLOG - End */
+/* Compatibility Testing */
+.platforms-icons-with-title div p {
+	display: block;
+    width: 100%;
+    text-align: center;
+	font: 500 1rem Aktiv Grotesk Corp,sans-serif!important;
+}
+.platforms-icons-with-title div {text-align:center!important;}
+.platforms-icons-with-title div img {max-width: 60%!important;}
+.configuration-compatibility p {margin:0!important;}
+.configuration-compatibility-list p {margin:0!important;}
+.configuration-compatibility-list ul {
+line-height: 1.5em;
+margin: 0px 0 42px;
+padding: 0;
+font-size: 1rem!important;
+}
+.configuration-compatibility-list ul li {
+list-style: none;
+position: relative;
+padding: 0 0 0 42px;
+}
+li.configuration-arrow::before, .configuration-arrow li::before {
+  content: "";
+  position: absolute;
+    left: 4px;
+    top: 10px;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #7A56F8;
+    border-width: 7px 7px 0 0;
+  transform: rotate(45deg);
+}
+ol.round-num {
+  counter-reset: li; 
+  list-style: none; 
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+ol.round-num p {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #e1e1e1;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: .3s ease-out;
+margin-bottom: 0.5rem!important;
+}
+ol.round-num p:hover { background: #eaeaea; }
+ol.round-num p:hover:before { transform: rotate(360deg); }
+ol.round-num p:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.5em;
+  background: #bfadff;
+  height: 3em;
+  width: 3em;
+  line-height: 2.4em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+.why-compatibility-list{}
+.why-compatibility-list ul{}
+.why-compatibility-list ul li{list-style-type: none;margin: 0px 0 16px 0;}
+.why-compatibility-list ul li:before{width:2em;height:2em;content:'';background:url(http://www.qamadness.com/wp-content/themes/qamadness/dist/images/site-icons/round-tip.svg) no-repeat center center/cover;position:absolute;left:0px;margin-top: 0.2em;opacity:70%;}
+.why-compatibility-box{margin-left:auto;margin-right:auto;padding-top: 60px;}
+.benefits-box-desc-big {font: 500 1.4rem Aktiv Grotesk Corp,sans-serif!important;
+  line-height: 1.2!important;
+  color: #2c2c2c!important;}
+/* Compatibility Testing - END */
+
+/* Manual Testing */
+
+.section.how_we_test .step-title:after {display:none!important;}
+.testing-needs-box {width:20%;padding: 0px 16px 0px 16px; margin: 20px 20px 20px 20px;}
+.testing-needs-box:hover {box-shadow: 0 5px 30px 0 rgba(36,23,228,.1);border-radius: 10px;}
+.testing-needs-box:hover .testing-needs-box-in img {}
+.testing-needs-box-in {border-radius: 10px;background-color: #f7fafa;}
+.testing-needs-box-text {color: #2a2938!important;padding: 14px 6px 7px 6px!important;line-height: 1.4!important;font: 300 1.0rem Aktiv Grotesk Corp,sans-serif!important;}
+.testing-needs-box-description {line-height: 1.2!important;}
+.testing-needs-box-long {line-height: 1.3!important;padding-top: 12px;margin-left: 14px;width: 80%;font: 300 1.0rem Aktiv Grotesk Corp,sans-serif!important;}
+.benefits-box-num {font: 300 4.0rem 'Roboto Slab', serif!important;}
+.benefits-box-desc {font: 300 1.0rem Aktiv Grotesk Corp,sans-serif!important;line-height: 1.3!important;}
+.types-bg {position:absolute;top: -65px;}
+.types-box-in {border-radius: 10px;box-shadow: 0 5px 30px 0 rgba(36,23,228,.2);background-color: #fff;display: inline-block;width: 100%;height: 100%;transition: .4s;overflow: hidden;padding: 14px 14px 14px 14px;}
+.types-box-in h2 {font-size: 1.6rem!important;font-weight: 500!important;}
+.types-box-in p {line-height: 1.2!important;font: 300 1rem Aktiv Grotesk Corp,sans-serif!important;}
+.types-box-icon h3 {font-size: 1.0rem!important;}
+.types-box-icon {font-size: 1.0rem!important;z-index:100;position:relative;}
+.platforms-title {line-height: 1.2;text-transform: uppercase;
+    font: 500 .875rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    letter-spacing: 1.25px;}
+.platforms-icons div img {padding: 14px 0;}
+.platforms-title {margin-top: -20px!important;
+    text-align: right!important;}
+.step-title-landing {
+    text-transform: uppercase;
+    font: 500 .875rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    letter-spacing: 1.25px;
+    margin-bottom: 2.0rem;
+    position: relative;
+    z-index: 3;
+    padding-top: 2.95rem;
+    min-width: 110px;
+}
+.step-title-landing:before {
+    counter-increment: a;
+    content: counter(a);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: -40px;
+    z-index: -1;
+    font: 700 4rem Aktiv Grotesk Corp,sans-serif;
+    color: #e5e3fc;
+}
+.documentation-description p {line-height: 1.1!important;color: #8c8b93!important;padding: 0!important;}
+.experience-icon {padding-top: 0px;}
+/* Manual Testing - END */
+
+/* Autoamted Testing */
+.margin-top-lang {margin-top: -50px;}
+.testing-needs-wrap {display: flex;}
+.testing-needs-box-at {width:20%;padding: 0px 16px 0px 16px;}
+.testing-needs-box-at:hover {box-shadow: 0 5px 30px 0 rgba(36,23,228,.1);border-radius: 10px;}
+.testing-needs-box-at:hover .testing-needs-box-in img {}
+.testing-needs-box-in-auto {border-radius: 10px;text-align:left;padding-left: 0px;}
+.testing-needs-box-in-auto img {width:45%!important;padding-top: 20px!important;}
+.testing-needs-box-title {
+    padding: 18px 6px 0px 6px!important;
+    font: 600 .875rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;}
+.testing-needs-box-text {font: 400 1rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    line-height: 1.25;;text-align:left;}
+.testing-needs-box-description {line-height: 1.2!important;}
+.testing-needs-box-long {
+    line-height: 1.3!important;
+    padding-top: 12px;
+    margin-left: 14px;
+    width: 80%;
+    font: 300 1.0rem Aktiv Grotesk Corp,sans-serif!important;}
+
+.benefits-box img {max-width:60%!important;}
+.benefits-box-num {font: 300 3.0rem 'Roboto Slab', serif!important;}
+.benefits-box-description {font: 400 1.0rem Aktiv Grotesk Corp,sans-serif!important;line-height: 1.3!important;color: #3e3d4a!important;}
+.types-bg {position:absolute;top: 72px;}
+.benefits-box-desc {font: 400 1.1rem Aktiv Grotesk Corp,sans-serif!important;line-height: 1.2!important;color: #3e3d4a!important;}
+.types-bg {position:absolute;top: 72px;}
+
+.at-block-title {font: 800 1.2rem Aktiv Grotesk Corp,sans-serif!important;text-align: center;}
+.at-block-list {padding:14px 0 0 0!important;}
+.at-block-list li {text-align: center;list-style-type: none;line-height: 1.8!important;}
+.at-block {box-shadow: 0 5px 30px 0 rgb(36 23 228 / 10%);border-radius: 30px;padding: 32px 10px 8px 10px!important;}
+.at-block-2 {box-shadow: 0 5px 30px 0 rgb(36 23 228 / 10%);border-radius: 30px;padding: 22px 20px 6px 30px!important;}
+
+.language-icon {text-align: center;}
+.language-icon img {}
+.language-icon-withtitle img {max-width: 64px!important;}
+.language-tool-icon {text-align: center;padding-bottom: 26px!important;}
+.language-tool-icon img {max-width: 50px!important;}
+.language-tool-title {line-height: 1.2;
+    text-transform: uppercase;
+    font: 500 .875rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    letter-spacing: 1.25px;
+    display: block;
+    margin-top: 10px!important;}
+.language-arrow {width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #efefef;}
+.platforms-icons div img {padding: 14px 0;}
+.benefits-box {padding-bottom: 1rem;}
+
+..types-box-icon h3 {font-size: 1.0rem!important;padding-top: 1rem;}
+..types-box-icon {font-size: 1.0rem!important;z-index:100;position:relative;}
+..platforms-title {line-height: 1.2;text-transform: uppercase;
+    font: 500 .875rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    letter-spacing: 1.25px;}
+..platforms-icons div img {padding: 14px 0;}
+
+/* Autoamted Testing - END */
+/* UI Testing */
+.ui-triangle li.current {border-radius: 14px 0px 0px 14px!important;}
+.ui-triangle li.current p {margin: 0 16px 0 18px!important;}
+.ui-needs-icon {
+  text-align: center!important;
+  width: 32%!important;
+  display: block!important;
+}
+.ui-needs-title {
+  font: 700 1.3rem Aktiv Grotesk Corp,sans-serif!important;
+}
+.ui-needs-box ul {padding:0;}
+.ui-needs-box li {
+}
+.ui-detail-box {margin-top: 4rem!important;}
+.at-block-2 {box-shadow: 0 5px 30px 0 rgb(36 23 228 / 20%);border-radius: 30px;padding: 22px 20px 6px 30px!important;}
+.ui-pross-box {margin-top: 4rem!important;}
+.steps-ui-icons {
+  width: 100%!important;
+  padding: 0!important;
+  margin:0!important;
+display: block;
+    margin-left: -26px;
+}
+.ui-triangle li {
+  text-align:center;
+  display: inline-block!important;
+  width: 16.667%!important;
+  float: left!important;
+  position:relative!important;
+  height: 160px!important;
+  background: linear-gradient(0.25turn, #9b91f2, #c5a1e1)!important;
+}
+.steps-ui-icons li img {max-width:40%!important;}
+.line-uif-icons {margin-bottom: -18px!important; margin-top: -10px!important;opacity: 80%;margin-left: -18px;}
+
+.countup li::before {
+  counter-increment: section!important;
+  content: counter(section)!important;
+  position: absolute!important;
+  top: 50%; left: 50%; bottom: 0; right: 0!important;
+  margin: auto!important;
+  font: 300 3.0rem 'Roboto Slab', serif!important;
+}
+.ui-triangl li {
+  display: inline-block!important;
+  width: 14.28571%!important;
+  height: 160px!important;
+  float: left!important;
+  position:relative!important;
+  background: linear-gradient(0.25turn, #9b91f2, #c5a1e1)!important;
+}
+.steps-triangle li div {
+  width:100%;
+  text-align: center!important;
+  position: absolute!important;
+  top: 50%!important;
+  height: 110px!important;
+  transform: translate(0, -50%)!important;
+  color:#fbfbfb!important;
+  font: 400 1.2rem Aktiv Grotesk Corp,sans-serif!important; 
+  cursor: default;
+}
+.ui-triangle li div h4 {
+  width:100%;
+  text-align: center!important;
+  position: absolute!important;
+  top: 22%!important;
+  transform: translate(0, -50%)!important;
+  min-height:52px;
+  padding: 0px 7px 0px 21px!important;
+}
+.ui-triangle li div p {
+  width:100%;
+  text-align: center!important;
+  position: absolute!important;
+  top: 80%!important;
+  transform: translate(0, -50%)!important;
+  color: #fbfbfb!important;
+  font: 400 1.2rem Aktiv Grotesk Corp,sans-serif!important;
+  min-height: 44px;
+  padding: 0px 7px 0px 21px!important;
+}
+.countup li::before {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    font: 300 9.0rem 'Roboto Slab', serif!important;
+    top: -20px;
+    left: 9%;
+    color: #c2a5e2;
+}
+.ui-triangl li {
+  display: inline-block!important;
+  width: 14.28571%!important;
+  height: 160px!important;
+  float: left!important;
+  position:relative!important;
+  background: linear-gradient(0.25turn, #9b91f2, #c5a1e1)!important;
+}
+/* UI Testing - END */
+/* Performance Testing */
+.performance-icon {text-align: center;
+  width: 72%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+.performanc-box {
+  background: #F1F1F1;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 0 rgb(36 23 228 / 10%);
+}
+.performanc-title {
+  font: 700 1.3rem Aktiv Grotesk Corp,sans-serif!important;
+}
+.performanc-description {
+  line-height: 1.2!important;
+  font-size: .95rem!important;
+}
+.performance-needs-wrap {
+  margin: 25px 0 25px 0;
+}
+.perf-needs-box {margin-top: 5rem!important;}
+.perf-pross-box {margin-top: 4rem!important;}
+.steps-perf-icons {
+  width: 100%!important;
+  padding: 0!important;
+  margin:0!important;
+display: block;
+    margin-left: -26px;
+}
+.steps-perf-icons li {
+text-align:center;
+  display: inline-block!important;
+  width: 14.28571%!important;
+  float: left!important;
+  position:relative!important;
+}
+.steps-perf-icons li img {max-width:40%!important;}
+.line-perf-icons {margin-bottom: -18px!important; margin-top: -10px!important;opacity: 80%;margin-left: -18px;}
+
+.countup li::before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  top: 50%; left: 50%; bottom: 0; right: 0;
+  margin: auto;
+  font: 300 3.0rem 'Roboto Slab', serif!important;
+}
+body {counter-reset: section;} 
+.countup li::before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  bottom: 0; right: 0;
+    overflow: hidden;
+  margin: auto;
+  font: 300 9.0rem 'Roboto Slab', serif!important;
+    top: -20px;
+    left: 30%;
+    color: #c2a5e2;
+}
+.steps-triangle {
+  width: 100%!important;
+  padding: 0!important;
+  margin:0!important;
+box-shadow: 0 5px 30px 0 rgb(36 23 228 / 20%);
+display: block;
+border-radius: 14px 14px 14px 14px;
+}
+.steps-triangle:after {
+  clear: both!important;
+  content: ""!important;
+  display: table!important;
+}
+.perf-triangle li {
+  display: inline-block!important;
+  width: 14.28571%!important;
+  height: 160px!important;
+  float: left!important;
+  position:relative!important;
+  background: linear-gradient(0.25turn, #9b91f2, #c5a1e1)!important;
+}
+.steps-perf-icons li p {
+  margin: 0 10px 0 26px!important;
+  text-align: center!important;
+  position: absolute!important;
+  top: 50%!important;
+  transform: translate(0, -50%)!important;
+  color:#fbfbfb!important;
+font: 400 1.2rem Aktiv Grotesk Corp,sans-serif!important; 
+    cursor: default;
+}
+.steps-perf-icons li.current {border-radius: 14px 0px 0px 14px!important;}
+.steps-perf-icons li.current p {margin: 0 16px 0 18px!important;}
+.perf-triangle li::after {
+  content:'';
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 100%;
+  border-bottom: solid 80px transparent;
+  border-top: solid 80px transparent;
+  border-left: solid 22px #c5a1e1;
+}
+.steps-triangle li.last-step{border-radius: 0px 14px 14px 0px;}
+.steps-triangle li.last-step::after {display: none;}
+
+@media (max-width: 992px) {
+  .perf-triangle li::after {
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    /* border-bottom: solid 55px transparent; */
+    border-top: solid 40px transparent;
+    border-left: solid 185px #c5a1e1;
+    border-right: solid 185px #c5a1e1;
+  }
+  .countup li::before {
+    left: 0%;
+  }
+  .perf-triangle li {
+  width: 353px!important;
+  background: linear-gradient(0.0turn, #9b91f2, #c5a1e1)!important;
+  }
+  .steps-perf-icons li p {
+    margin: 0 auto 0 auto!important;
+    width: 100%;
+  }
+}
+/* Performance Testing - END */
+/* Acceptance Testing */
+.accept-needs-box {padding-top: 1em;margin: 0 10px!important;
+  background: #dbdcf8!important;
+  border-radius: 10px!important;
+min-height:460px!important;}
+.accept-needs-box p {margin:0!important;}
+.accept-needs-boxj:before {
+  content: "";
+  width: 100%!important;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: .3s;
+}
+.accept-needs-box:hover:before {box-shadow: 0 20px 30px 0 rgb(36 23 228 / 10%)!important;}
+.accept-needs-icon {
+  text-align: center!important;
+  width: 32%!important;
+  display: block!important;
+}
+.accept-needs-title {font: 700 1.3rem Aktiv Grotesk Corp,sans-serif!important;padding: 0.6em 0!important;}
+.accept-needs-description {line-height: 1.2!important;}
+.accept-needs-box ul {padding:0!important;list-style-type: none!important;}
+.accept-needs-box li {line-height: 1.3!important;}
+.accept-needs-content{margin: 1em 0em 0em 3em!important;}
+/* Acceptance Testing - END */
+/* Functional Testing */
+.func-test-func {text-align: center!important;}
+.func-test-func p {font: 500 0.9rem Aktiv Grotesk Corp,sans-serif!important;}
+.func-test-func img {width:80%;}
+.func-test-maintext {margin-bottom:40px;}
+.func-test-block-img img {width:90%;}
+.huge-font, .huge-font span {font-size:4.0rem!important;line-height:0.9!important;font-weight:600!important;letter-spacing: -2.0px!important;}
+.big-font, .big-font span {font-size:1.6rem!important;line-height:1.2!important;font-weight:500!important;}
+.p-beautify, .p-beautify span {
+line-height:1.2!important;
+font-weight:500!important;
+font-size:1.6rem!important;
+}
+.func-cause-call {min-height:100px;display:inherit!important;width: 80%!important;margin-top: -80px;}
+.func-cause-list .func-cause-item {
+	padding: 20px 25px;
+    margin: 20px 0px;
+	width:90%;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px 0 rgb(36 23 228 / 10%);
+}
+.func-cause-item>p {margin:0!important;font: 400 1.0rem Aktiv Grotesk Corp,sans-serif!important;}
+.func-cause-title {padding-bottom:35px;}
+.left-text {text-align:left;}
+.right-text {text-align:right;}
+.test-device-box h3 {min-height: 62px;padding-bottom: 15px;}
+.test-device-box {padding-top: 14px;}
+.test-device-box-left p {text-align:left!important;}
+.test-device-box-right p {text-align:right!important;}
+.test-device-box-justify p {text-align:justify!important;}
+.func-platforms-icons div img {margin-top: 14px;}
+/*glitch*/
+.glitch-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .glitch {
+    color: #3e3d4a;
+    position: relative;
+    display: inline-block;
+  }
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: while;
+  }
+  .glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #49FC00;
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim-2 4s infinite linear alternate-reverse;
+  }
+  .glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #b300fc;
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch-anim 4s infinite linear alternate-reverse;
+  }
+  @-webkit-keyframes glitch-anim {
+    0% {
+      clip: rect(82px, 9999px, 118px, 0);
+    }
+    4.166666666666666% {
+      clip: rect(65px, 9999px, 38px, 0);
+    }
+    8.333333333333332% {
+      clip: rect(72px, 9999px, 19px, 0);
+    }
+    12.5% {
+      clip: rect(73px, 9999px, 78px, 0);
+    }
+    16.666666666666664% {
+      clip: rect(141px, 9999px, 99px, 0);
+    }
+    20.833333333333336% {
+      clip: rect(41px, 9999px, 127px, 0);
+    }
+    25% {
+      clip: rect(40px, 9999px, 126px, 0);
+    }
+    29.166666666666668% {
+      clip: rect(30px, 9999px, 8px, 0);
+    }
+    33.33333333333333% {
+      clip: rect(62px, 9999px, 97px, 0);
+    }
+    37.5% {
+      clip: rect(63px, 9999px, 75px, 0);
+    }
+    41.66666666666667% {
+      clip: rect(105px, 9999px, 7px, 0);
+    }
+    45.83333333333333% {
+      clip: rect(137px, 9999px, 135px, 0);
+    }
+    50% {
+      clip: rect(89px, 9999px, 103px, 0);
+    }
+    54.166666666666664% {
+      clip: rect(120px, 9999px, 147px, 0);
+    }
+    58.333333333333336% {
+      clip: rect(82px, 9999px, 49px, 0);
+    }
+    62.5% {
+      clip: rect(57px, 9999px, 147px, 0);
+    }
+    66.66666666666666% {
+      clip: rect(117px, 9999px, 5px, 0);
+    }
+    70.83333333333334% {
+      clip: rect(4px, 9999px, 72px, 0);
+    }
+    75% {
+      clip: rect(8px, 9999px, 143px, 0);
+    }
+    79.16666666666666% {
+      clip: rect(30px, 9999px, 80px, 0);
+    }
+    83.33333333333334% {
+      clip: rect(94px, 9999px, 3px, 0);
+    }
+    87.5% {
+      clip: rect(51px, 9999px, 50px, 0);
+    }
+    91.66666666666666% {
+      clip: rect(18px, 9999px, 83px, 0);
+    }
+    95.83333333333334% {
+      clip: rect(2px, 9999px, 88px, 0);
+    }
+    100% {
+      clip: rect(141px, 9999px, 113px, 0);
+    }
+  }
+  @keyframes glitch-anim {
+    0% {
+      clip: rect(82px, 9999px, 118px, 0);
+    }
+    4.166666666666666% {
+      clip: rect(65px, 9999px, 38px, 0);
+    }
+    8.333333333333332% {
+      clip: rect(72px, 9999px, 19px, 0);
+    }
+    12.5% {
+      clip: rect(73px, 9999px, 78px, 0);
+    }
+    16.666666666666664% {
+      clip: rect(141px, 9999px, 99px, 0);
+    }
+    20.833333333333336% {
+      clip: rect(41px, 9999px, 127px, 0);
+    }
+    25% {
+      clip: rect(40px, 9999px, 126px, 0);
+    }
+    29.166666666666668% {
+      clip: rect(30px, 9999px, 8px, 0);
+    }
+    33.33333333333333% {
+      clip: rect(62px, 9999px, 97px, 0);
+    }
+    37.5% {
+      clip: rect(63px, 9999px, 75px, 0);
+    }
+    41.66666666666667% {
+      clip: rect(105px, 9999px, 7px, 0);
+    }
+    45.83333333333333% {
+      clip: rect(137px, 9999px, 135px, 0);
+    }
+    50% {
+      clip: rect(89px, 9999px, 103px, 0);
+    }
+    54.166666666666664% {
+      clip: rect(120px, 9999px, 147px, 0);
+    }
+    58.333333333333336% {
+      clip: rect(82px, 9999px, 49px, 0);
+    }
+    62.5% {
+      clip: rect(57px, 9999px, 147px, 0);
+    }
+    66.66666666666666% {
+      clip: rect(117px, 9999px, 5px, 0);
+    }
+    70.83333333333334% {
+      clip: rect(4px, 9999px, 72px, 0);
+    }
+    75% {
+      clip: rect(8px, 9999px, 143px, 0);
+    }
+    79.16666666666666% {
+      clip: rect(30px, 9999px, 80px, 0);
+    }
+    83.33333333333334% {
+      clip: rect(94px, 9999px, 3px, 0);
+    }
+    87.5% {
+      clip: rect(51px, 9999px, 50px, 0);
+    }
+    91.66666666666666% {
+      clip: rect(18px, 9999px, 83px, 0);
+    }
+    95.83333333333334% {
+      clip: rect(2px, 9999px, 88px, 0);
+    }
+    100% {
+      clip: rect(141px, 9999px, 113px, 0);
+    }
+  }
+  @-webkit-keyframes glitch-anim-2 {
+    6.666666666666667% {
+      clip: rect(115px, 9999px, 85px, 0);
+    }
+    10% {
+      clip: rect(137px, 9999px, 110px, 0);
+    }
+    13.333333333333334% {
+      clip: rect(141px, 9999px, 47px, 0);
+    }
+    16.666666666666664% {
+      clip: rect(121px, 9999px, 15px, 0);
+    }
+    20% {
+      clip: rect(107px, 9999px, 114px, 0);
+    }
+    23.333333333333332% {
+      clip: rect(25px, 9999px, 95px, 0);
+    }
+    26.666666666666668% {
+      clip: rect(68px, 9999px, 108px, 0);
+    }
+    30% {
+      clip: rect(31px, 9999px, 68px, 0);
+    }
+    33.33333333333333% {
+      clip: rect(80px, 9999px, 26px, 0);
+    }
+    36.666666666666664% {
+      clip: rect(74px, 9999px, 38px, 0);
+    }
+    40% {
+      clip: rect(79px, 9999px, 21px, 0);
+    }
+    43.333333333333336% {
+      clip: rect(5px, 9999px, 19px, 0);
+    }
+    46.666666666666664% {
+      clip: rect(58px, 9999px, 42px, 0);
+    }
+    50% {
+      clip: rect(87px, 9999px, 72px, 0);
+    }
+    53.333333333333336% {
+      clip: rect(89px, 9999px, 130px, 0);
+    }
+    56.666666666666664% {
+      clip: rect(122px, 9999px, 11px, 0);
+    }
+    60% {
+      clip: rect(135px, 9999px, 148px, 0);
+    }
+    63.33333333333333% {
+      clip: rect(34px, 9999px, 76px, 0);
+    }
+    66.66666666666666% {
+      clip: rect(117px, 9999px, 65px, 0);
+    }
+    70% {
+      clip: rect(80px, 9999px, 63px, 0);
+    }
+    73.33333333333333% {
+      clip: rect(108px, 9999px, 44px, 0);
+    }
+    76.66666666666667% {
+      clip: rect(30px, 9999px, 82px, 0);
+    }
+    80% {
+      clip: rect(49px, 9999px, 34px, 0);
+    }
+    83.33333333333334% {
+      clip: rect(1px, 9999px, 44px, 0);
+    }
+    86.66666666666667% {
+      clip: rect(111px, 9999px, 45px, 0);
+    }
+    90% {
+      clip: rect(82px, 9999px, 98px, 0);
+    }
+    93.33333333333333% {
+      clip: rect(45px, 9999px, 59px, 0);
+    }
+    96.66666666666667% {
+      clip: rect(70px, 9999px, 67px, 0);
+    }
+    100% {
+      clip: rect(134px, 9999px, 33px, 0);
+    }
+  }
+  @keyframes glitch-anim-2 {
+    6.666666666666667% {
+      clip: rect(115px, 9999px, 85px, 0);
+    }
+    10% {
+      clip: rect(137px, 9999px, 110px, 0);
+    }
+    13.333333333333334% {
+      clip: rect(141px, 9999px, 47px, 0);
+    }
+    16.666666666666664% {
+      clip: rect(121px, 9999px, 15px, 0);
+    }
+    20% {
+      clip: rect(107px, 9999px, 114px, 0);
+    }
+    23.333333333333332% {
+      clip: rect(25px, 9999px, 95px, 0);
+    }
+    26.666666666666668% {
+      clip: rect(68px, 9999px, 108px, 0);
+    }
+    30% {
+      clip: rect(31px, 9999px, 68px, 0);
+    }
+    33.33333333333333% {
+      clip: rect(80px, 9999px, 26px, 0);
+    }
+    36.666666666666664% {
+      clip: rect(74px, 9999px, 38px, 0);
+    }
+    40% {
+      clip: rect(79px, 9999px, 21px, 0);
+    }
+    43.333333333333336% {
+      clip: rect(5px, 9999px, 19px, 0);
+    }
+    46.666666666666664% {
+      clip: rect(58px, 9999px, 42px, 0);
+    }
+    50% {
+      clip: rect(87px, 9999px, 72px, 0);
+    }
+    53.333333333333336% {
+      clip: rect(89px, 9999px, 130px, 0);
+    }
+    56.666666666666664% {
+      clip: rect(122px, 9999px, 11px, 0);
+    }
+    60% {
+      clip: rect(135px, 9999px, 148px, 0);
+    }
+    63.33333333333333% {
+      clip: rect(34px, 9999px, 76px, 0);
+    }
+    66.66666666666666% {
+      clip: rect(117px, 9999px, 65px, 0);
+    }
+    70% {
+      clip: rect(80px, 9999px, 63px, 0);
+    }
+    73.33333333333333% {
+      clip: rect(108px, 9999px, 44px, 0);
+    }
+    76.66666666666667% {
+      clip: rect(30px, 9999px, 82px, 0);
+    }
+    80% {
+      clip: rect(49px, 9999px, 34px, 0);
+    }
+    83.33333333333334% {
+      clip: rect(1px, 9999px, 44px, 0);
+    }
+    86.66666666666667% {
+      clip: rect(111px, 9999px, 45px, 0);
+    }
+    90% {
+      clip: rect(82px, 9999px, 98px, 0);
+    }
+    93.33333333333333% {
+      clip: rect(45px, 9999px, 59px, 0);
+    }
+    96.66666666666667% {
+      clip: rect(70px, 9999px, 67px, 0);
+    }
+    100% {
+      clip: rect(134px, 9999px, 33px, 0);
+    }
+  }
+/*glitch* -end */
+/* Functional Testing - END */
+
+/* Regression Testing */
+.cooperation-icon {text-align: center;
+    width: 72%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+.cooperation-box {
+    background: #F1F1F1;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px 0 rgb(126 120 204 / 10%);
+	min-height: 390px;
+}
+.cooperation-title {
+    font: 700 1.3rem Aktiv Grotesk Corp,sans-serif!important;
+}
+.cooperation-description {
+    line-height: 1.2!important;
+    font-size: .95rem!important;
+}
+.benefits-box-desc-big {font: 500 1.4rem Aktiv Grotesk Corp,sans-serif!important;
+    line-height: 1.2!important;
+    color: #2c2c2c!important;}
+.margin-3-steps {margin:0 40px 0 40px;}
+.principles-box {
+	border-radius: 10px;
+	letter-spacing: 0.3px;
+	line-height: 1.3!important;
+    box-shadow: 0 5px 30px 0 rgba(36,23,228,.2);
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    overflow: hidden;
+    padding: 14px 18px 15px 18px;
+	font: 400 1.02rem Aktiv Grotesk Corp,sans-serif!important;}
+.types-bg-1 {
+    position: absolute;
+    top: 150px;
+}
+.principles-icon img {max-width:86%!important;}
+.principles-wrap {margin-bottom: 10px;}
+/* Regression Testing - END */
+
+/* Mobile App Testing */
+.mobile-app-box-title {
+	padding: 10px 0px 0px 0px!important;
+    font: 600 .875rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.mobile-app-box-text {
+    font: 400 1rem Aktiv Grotesk Corp,sans-serif;
+    color: #2a2938;
+    line-height: 1.2!important;
+    text-align: left;
+	padding-right: 20px;
+}
+.left-text {text-align:left;}
+.right-text {text-align:right;}
+.test-device-box h3 {/*padding-bottom:20px;*/min-height: 62px;}
+.test-device-box {padding-top: 14px;}
+.types-box-icon {position: relative;}
+.speech-bubble-box-mob {position: absolute;top: -180px;left:12px;}
+.bubble {
+  opacity: 100%;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 110%;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 5px 30px 0 rgba(36,23,228,.2);
+}
+.types-box-icon .speech-bubble-box-mob {display:none!important;}
+.types-box-icon:hover .speech-bubble-box-mob {display: block!important;}
+.types-box-icon img {max-width:92px!important;}
+.types-box-icon h3 {
+    font-size: 1.0rem!important;
+    padding: 16px 0 30px 0;
+}
+
+/* Mobile App Testing - END */
+@media (max-width: 576px) {
+    .col-md-2-5row {
+        padding-top: 40px!important;
+    }
+    .review-animation {display:none;}
+    .platforms-title {text-align: center;padding-bottom: 40px;}
+    .testing-needs-wrap {display: block;}
+    .testing-needs-box-at {width: 100%;box-shadow: 0 5px 30px 0 rgba(36,23,228,.1);border-radius: 10px;}
+    .testing-needs-box-title {padding: 18px 12px 0px 12px!important;margin-bottom: 0.0rem!important;}
+    .testing-needs-box-in-auto {padding-left: 12px;}
+    .testing-needs-box-text {padding-bottom: 16px!important;}
+    .testing-needs-box-in-auto img {width: 25%!important;}
+    .testing-needs-box {width: 100%;}
+    .language-arrow {    
+        height: 6px!important;
+        background: #efefef!important;
+        margin-top: 20px!important;
+        margin-bottom: 20px!important;
+        display:block;
+    
+        border-top: 0px!important;
+        border-bottom: 0px!important;
+        border-left: 0px!important;
+        width: 100%!important; } 
+    .margin-top-lang {margin-top: 0px!important;}
+    .padding-top-190 {padding-top: 90px;}
+    .language-icons-box {padding-top: 18px;}
+    .language-tool-icon-mobile {padding-bottom:32px!important;}
+    .section-title-center {margin-bottom: 2rem!important;}
+    .section-title-left:after {left: 11%!important;}
+    .platforms-title {text-align: center!important;}
+    
+}
+@media (min-width: 768px) {
+    .col-md-2-5row {
+        width: 20%!important;
+        flex: 0 0 20%!important;
+        max-width: 20.0%!important;
+        float: left;
+    }
+    .container-manual {
+        margin-top: 100px;
+       margin-bottom: 100px;
+    }
+    .review-box {
+        margin-top: 6px!important;
+    }
+    .padding-110 {
+        padding-top: 0px;
+     }
+     .padding-60 {
+        padding-bottom: 30px;
+     }
+     .cooperation-container {
+         margin: 40px 0 40px 0;
+     }
+}
+
+@media (min-width: 992px) {
+    .col-md-2-5row {
+        width: 20%!important;
+        flex: 0 0 20%!important;
+        max-width: 20.0%!important;
+        float: left;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .col-md-2-5row {
+        width: 20%!important;
+        flex: 0 0 20%!important;
+        max-width: 20.0%!important;
+        float: left;
+    }
+}
+
+/* Bullet Point  */
+.bullet-point {width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+	background-color: #FB2259;}
+.benefits-box-hover:hover {}
+.element-t1 {animation: pulse-c 6s infinite;    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;}
+.element-t2 {animation: pulse-c 6s infinite;    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;}
+.element-t3 {animation: pulse-c 6s infinite;    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -o-animation-delay: 10s;
+    animation-delay: 10s;}
+.element-1 {animation: pulse 65s infinite;}
+.element-2 {animation: pulse 102s infinite;}
+.element-3 {animation: pulse 120s infinite;}
+@keyframes pulse {
+  0% {background-color: #A39CF0;}
+  50% {background-color: #FB2259;}
+  100% {background-color: #A39CF0;}
+}
+@keyframes pulse-c {
+  0% {color: #2a2938;}
+  40% {color: #2a2938;}
+  50% {color: #A39CF0;}
+  60% {color: #2a2938;}
+  100% {color: #2a2938;}
+}
+/* Bullet Point - END */
+/* Contuct Form  */
+.section.contact_us .contact-form-col .contact-form-block {
+    background-color: #fff;
+    padding: 1.5rem 2rem 2rem;
+    max-width: 430px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px 0 rgba(36,23,228,.1);
+}
+.section.content label { width:100%}
+.contact-form-col .contact-form-block {
+    background-color: #fff;
+    padding: 0rem 2rem 2rem;
+    max-width: 410px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px 0 rgba(36,23,228,.1);
+}
+.contact-form-block {background-color: #fff;
+padding: 1.5rem 2rem 2rem;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10px;
+box-shadow: 0 20px 30px 0 rgba(36,23,228,.1);
+}
+.contact-form-col {padding-top: 20px;}
+.tech-com-img {width: 74%;}
+.tech-com-h2 {font-size: 1.8rem;text-align: center;}
+.section.content { padding: 60px 0 !important;}
+.tech-com-h1 {text-align:center;margin-bottom: 40px;}
+.contact-form-block form textarea {line-height: 1.6em!important;padding-top: 10px;}
+.content-col {margin-top: 40px;}
+.fill-form-btn {
+cursor: default;
+color: #7a56f8;
+text-transform: uppercase;
+letter-spacing: 2px;
+transition: .3s;
+padding-top: .5rem;
+display: inline-block;
+font: 500 .875rem Aktiv Grotesk Corp,sans-serif;
+margin-left:8px;
+}
+.form-btn-second {display:none;}
+@media screen and (max-width: 992px) {
+.form-btn {display:none;}
+.form-btn-second {display:block!important;margin-bottom: 20px;}
+}
+/* Contuct Form - END */
+
+
+.mob-menu-open > .sub-menu {
+	    opacity: 1 !important;
+    visibility: visible !important;
+}		</style>
+		
+  <!--  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">-->
+
+  <script src="./What Is a Test Plan and How to Write One_ - QA Madness_files/api.js.download" async="" defer=""></script>
+
+
+
+  <script type="text/javascript">
+    function addLink() {
+
+      var body_element = document.getElementsByTagName('body')[0];
+
+      var selection;
+
+      selection = window.getSelection();
+
+      var pagelink = "<br /><br /> Source: <a href='" + document.location.href + "'>" + document.title + "</a> <a href='https://www.qamadness.com/'>Software testing company</a><br />";
+
+      var copytext = selection + pagelink;
+
+      var newdiv = document.createElement('div');
+
+      newdiv.style.position = 'absolute';
+
+      newdiv.style.left = '-99999px';
+
+      body_element.appendChild(newdiv);
+
+      newdiv.innerHTML = copytext;
+
+      selection.selectAllChildren(newdiv);
+
+      window.setTimeout(function() {
+
+        body_element.removeChild(newdiv);
+
+      }, 0);
+
+    }
+
+    document.oncopy = addLink;
+  </script>
+
+
+
+  <script>
+ var functional = ['Does the software actually work?', 'Does it work as we expected?'];
+
+ textSequence(0);
+
+ function textSequence(i) {
+   if (functional.length > i) {
+     setTimeout(function() {
+       document.getElementById("sequence").innerHTML = functional[i];
+       document.getElementById("sequence").setAttribute('data-text', functional[i]);
+       textSequence(++i);
+     }, 3000); // 1 second (in milliseconds)
+
+   } else if (functional.length == i) { // Loop
+     textSequence(0);
+   }
+ }
+
+
+ var TxtRotate = function(el, toRotate, period) {
+   this.toRotate = toRotate;
+   this.el = el;
+   this.loopNum = 0;
+   this.period = parseInt(period, 100) || 500;
+   this.txt = '';
+   this.tick();
+   this.isDeleting = false;
+ };
+
+ TxtRotate.prototype.tick = function() {
+   var i = this.loopNum % this.toRotate.length;
+   var fullTxt = this.toRotate[i];
+
+   if (this.isDeleting) {
+     this.txt = fullTxt.substring(0, this.txt.length - 1);
+   } else {
+     this.txt = fullTxt.substring(0, this.txt.length + 1);
+   }
+
+   this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+   var that = this;
+   var delta = 300 - Math.random() * 100;
+
+   if (this.isDeleting) {
+     delta /= 2;
+   }
+
+   if (!this.isDeleting && this.txt === fullTxt) {
+     delta = this.period;
+     this.isDeleting = true;
+   } else if (this.isDeleting && this.txt === '') {
+     this.isDeleting = false;
+     this.loopNum++;
+     delta = 500;
+   }
+
+   setTimeout(function() {
+     that.tick();
+   }, delta);
+ };
+
+ window.onload = function() {
+   var elements = document.getElementsByClassName('txt-rotate');
+   for (var i = 0; i < elements.length; i++) {
+     var toRotate = elements[i].getAttribute('data-rotate');
+     var period = elements[i].getAttribute('data-period');
+     if (toRotate) {
+       new TxtRotate(elements[i], JSON.parse(toRotate), period);
+     }
+   }
+   // INJECT CSS
+   var css = document.createElement("style");
+   css.type = "text/css";
+   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+   document.body.appendChild(css);
+ };
+  </script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NGFHBPK');</script>
+<!-- End Google Tag Manager -->
+
+<style class="fslightbox-styles">.fslightbox-absoluted{position:absolute;top:0;left:0}.fslightbox-fade-in{animation:fslightbox-fade-in .25s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out{animation:fslightbox-fade-out .25s ease}.fslightbox-fade-in-strong{animation:fslightbox-fade-in-strong .25s cubic-bezier(0,0,.7,1)}.fslightbox-fade-out-strong{animation:fslightbox-fade-out-strong .25s ease}@keyframes fslightbox-fade-in{from{opacity:.65}to{opacity:1}}@keyframes fslightbox-fade-out{from{opacity:.35}to{opacity:0}}@keyframes fslightbox-fade-in-strong{from{opacity:.3}to{opacity:1}}@keyframes fslightbox-fade-out-strong{from{opacity:1}to{opacity:0}}.fslightbox-cursor-grabbing{cursor:grabbing}.fslightbox-full-dimension{width:100%;height:100%}.fslightbox-open{overflow:hidden;height:100%}.fslightbox-flex-centered{display:flex;justify-content:center;align-items:center}.fslightbox-opacity-0{opacity:0!important}.fslightbox-opacity-1{opacity:1!important}.fslightbox-scrollbarfix{padding-right:17px}.fslightbox-transform-transition{transition:transform .3s}.fslightbox-container{font-family:Arial,sans-serif;position:fixed;top:0;left:0;background:linear-gradient(rgba(30,30,30,.9),#000 1810%);z-index:1000000000;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}.fslightbox-container *{box-sizing:border-box}.fslightbox-svg-path{transition:fill .15s ease;fill:#ddd}.fslightbox-nav{height:45px;width:100%;position:absolute;top:0;left:0}.fslightbox-slide-number-container{display:flex;justify-content:center;align-items:center;position:relative;height:100%;font-size:15px;color:#d7d7d7;z-index:0;max-width:55px;text-align:left}.fslightbox-slide-number-container .fslightbox-flex-centered{height:100%}.fslightbox-slash{display:block;margin:0 5px;width:1px;height:12px;transform:rotate(15deg);background:#fff}.fslightbox-toolbar{position:absolute;z-index:3;right:0;top:0;height:100%;display:flex;background:rgba(35,35,35,.65)}.fslightbox-toolbar-button{height:100%;width:45px;cursor:pointer}.fslightbox-toolbar-button:hover .fslightbox-svg-path{fill:#fff}.fslightbox-slide-btn-container{display:flex;align-items:center;padding:12px 12px 12px 6px;position:absolute;top:50%;cursor:pointer;z-index:3;transform:translateY(-50%)}@media (min-width:476px){.fslightbox-slide-btn-container{padding:22px 22px 22px 6px}}@media (min-width:768px){.fslightbox-slide-btn-container{padding:30px 30px 30px 6px}}.fslightbox-slide-btn-container:hover .fslightbox-svg-path{fill:#f1f1f1}.fslightbox-slide-btn{padding:9px;font-size:26px;background:rgba(35,35,35,.65)}@media (min-width:768px){.fslightbox-slide-btn{padding:10px}}@media (min-width:1600px){.fslightbox-slide-btn{padding:11px}}.fslightbox-slide-btn-container-previous{left:0}@media (max-width:475.99px){.fslightbox-slide-btn-container-previous{padding-left:3px}}.fslightbox-slide-btn-container-next{right:0;padding-left:12px;padding-right:3px}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-left:22px}}@media (min-width:768px){.fslightbox-slide-btn-container-next{padding-left:30px}}@media (min-width:476px){.fslightbox-slide-btn-container-next{padding-right:6px}}.fslightbox-down-event-detector{position:absolute;z-index:1}.fslightbox-slide-swiping-hoverer{z-index:4}.fslightbox-invalid-file-wrapper{font-size:22px;color:#eaebeb;margin:auto}.fslightbox-video{object-fit:cover}.fslightbox-youtube-iframe{border:0}.fslightbox-loader{display:block;margin:auto;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:67px;height:67px}.fslightbox-loader div{box-sizing:border-box;display:block;position:absolute;width:54px;height:54px;margin:6px;border:5px solid;border-color:#999 transparent transparent transparent;border-radius:50%;animation:fslightbox-loader 1.2s cubic-bezier(.5,0,.5,1) infinite}.fslightbox-loader div:nth-child(1){animation-delay:-.45s}.fslightbox-loader div:nth-child(2){animation-delay:-.3s}.fslightbox-loader div:nth-child(3){animation-delay:-.15s}@keyframes fslightbox-loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.fslightbox-source{position:relative;z-index:2;opacity:0}</style><script async="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/hotjar-1153462.js.download"></script></head>  <body class="post-template-default single single-post postid-17336 single-format-standard what-is-a-test-plan-and-how-to-write-one sidebar-primary cookies-not-set"><style type="text/css">html.hs-messages-widget-open.hs-messages-mobile,html.hs-messages-widget-open.hs-messages-mobile body{overflow:hidden!important;position:relative!important}html.hs-messages-widget-open.hs-messages-mobile body{height:100%!important;margin:0!important}#hubspot-messages-iframe-container{display:initial!important;z-index:2147483647;position:fixed!important;bottom:0!important}#hubspot-messages-iframe-container.widget-align-left{left:0!important}#hubspot-messages-iframe-container.widget-align-right{right:0!important}#hubspot-messages-iframe-container.internal{z-index:1016}#hubspot-messages-iframe-container.internal iframe{min-width:108px}#hubspot-messages-iframe-container .shadow-container{display:initial!important;z-index:-1;position:absolute;width:0;height:0;bottom:0;content:""}#hubspot-messages-iframe-container .shadow-container.internal{display:none!important}#hubspot-messages-iframe-container .shadow-container.active{width:400px;height:400px}#hubspot-messages-iframe-container iframe{display:initial!important;width:100%!important;height:100%!important;border:none!important;position:absolute!important;bottom:0!important;right:0!important;background:transparent!important}</style>
+
+    <!--[if IE]>
+      <div class="alert alert-warning">
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+    <![endif]-->
+    
+<!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGFHBPK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager (noscript)
+
+<!-- Start of HubSpot Embed Code -->
+
+<script type="text/javascript" id="hs-script-loader" async="" defer="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/3076879.js(1).download"></script>
+
+<!-- End of HubSpot Embed Code -->
+
+
+
+<header class="banner header-scroll">
+
+  <!-- Added manually | could be deleted  -->
+
+  <!--<div class="row justify-content-around align-items-center" style="background-color:#629faa;;">
+
+<div class="col-md-7 col-sm-11 align-self-center" style="font-size: 0.8rem;font-weight: 500;line-height: 1.3;">
+
+<p style="margin-bottom: 0rem;padding:10px;color:#000;font-size: 0.8rem;font-weight: 500;line-height: 1.3;">
+
+In this time of revival, we’d like to contribute our QA expertise to the tech community. QA Madness CTO and CEO are ready to share core tips on how to reboot business without giving up on product quality. <a href="https://www.qamadness.com/supporting-the-tech-community/" style="text-decoration: underline;color:#fff">Check in for more</a>.
+
+</p>
+
+</div>
+
+</div>-->
+
+  <!-- END manual part | could be deleted  -->
+
+
+
+  <div class="header">
+
+    <span class="for-blur"></span>
+
+
+
+    <a class="brand" href="http://www.qamadness.com/">
+
+      <img src="./What Is a Test Plan and How to Write One_ - QA Madness_files/Logo.svg" alt="QA Madness logo. Outsource QA company.">
+
+    </a>
+
+
+
+    <div class="navigation navbar-expand-lg navbar-light">
+
+      <button type="button" class="navbar-toggler hamburger hamburger--squeeze" data-toggle="collapse" data-target="#navbarSupportedContent">
+
+        <span class="hamburger-top-line"></span>
+
+        <span class="hamburger-mid-line"></span>
+
+        <span class="hamburger-bot-line"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="menu-main-navigation-container"><ul id="menu-main-navigation" class="nav"><li id="menu-item-16586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16586" style="height: 21px;"><a href="http://www.qamadness.com/company/">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-16587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16587"><a href="http://www.qamadness.com/about-us/">About Us</a></li>
+	<li id="menu-item-11855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11855"><a href="http://www.qamadness.com/why-qa-madness/">Why QA Madness</a></li>
+	<li id="menu-item-18799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18799"><a href="http://www.qamadness.com/careers/">Join our network</a></li>
+</ul>
+</li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-60" style="height: 21px;"><a href="http://www.qamadness.com/services/">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-16242" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-16242"><a href="http://www.qamadness.com/services/manual-testing/">Manual testing</a></li>
+	<li id="menu-item-16250" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-16250"><a href="http://www.qamadness.com/services/automated-testing/">Automated testing</a></li>
+	<li id="menu-item-517" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-517"><a href="http://www.qamadness.com/services/web-application-testing/">Web application testing</a></li>
+	<li id="menu-item-516" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-516"><a href="http://www.qamadness.com/services/mobile-application-testing/">Mobile application testing</a></li>
+	<li id="menu-item-12628" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-12628"><a href="http://www.qamadness.com/services/desktop-application-testing/">Desktop App Testing</a></li>
+	<li id="menu-item-17046" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-17046"><a href="http://www.qamadness.com/services/wearables-testing/">Wearables testing</a></li>
+	<li id="menu-item-511" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-511"><a href="http://www.qamadness.com/services/testing-documentation/">Testing documentation</a></li>
+	<li id="menu-item-512" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-512"><a href="http://www.qamadness.com/services/qa-audit-consulting/">QA audit &amp; consulting</a></li>
+</ul>
+</li>
+<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-61" style="height: 21px;"><a href="http://www.qamadness.com/solutions/">Coverage</a>
+<ul class="sub-menu">
+	<li id="menu-item-500" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-500"><a href="http://www.qamadness.com/solutions/functional-testing/">Functional testing</a></li>
+	<li id="menu-item-18121" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-18121"><a href="http://www.qamadness.com/solutions/exploratory-testing/">Exploratory testing</a></li>
+	<li id="menu-item-501" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-501"><a href="http://www.qamadness.com/solutions/gui-testing/">UI testing</a></li>
+	<li id="menu-item-18411" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-18411"><a href="http://www.qamadness.com/solutions/accesibility-testing/">Accesibility Testing</a></li>
+	<li id="menu-item-17476" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-17476"><a href="http://www.qamadness.com/solutions/performance-testing/">Performance Testing</a></li>
+	<li id="menu-item-11176" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-11176"><a href="http://www.qamadness.com/solutions/regression-testing/">Regression testing</a></li>
+	<li id="menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-498"><a href="http://www.qamadness.com/solutions/compatibility-testing/">Compatibility testing</a></li>
+	<li id="menu-item-502" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-502"><a href="http://www.qamadness.com/solutions/integration-testing/">Integration testing</a></li>
+	<li id="menu-item-494" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-494"><a href="http://www.qamadness.com/solutions/acceptance-testing/">Acceptance testing</a></li>
+	<li id="menu-item-503" class="menu-item menu-item-type-post_type menu-item-object-solutions menu-item-503"><a href="http://www.qamadness.com/solutions/localization-testing/">Localization testing</a></li>
+</ul>
+</li>
+<li id="menu-item-11810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11810" style="height: 21px;"><a href="http://www.qamadness.com/industries/">Industries</a>
+<ul class="sub-menu">
+	<li id="menu-item-11815" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11815"><a href="http://www.qamadness.com/industries/ecommerce-testing/">E-commerce</a></li>
+	<li id="menu-item-11814" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11814"><a href="http://www.qamadness.com/industries/gaming/">Gaming</a></li>
+	<li id="menu-item-11975" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11975"><a href="http://www.qamadness.com/industries/iot-testing/">IoT</a></li>
+	<li id="menu-item-11812" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11812"><a href="http://www.qamadness.com/industries/business-solutions-testing/">Business Solutions</a></li>
+	<li id="menu-item-11813" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11813"><a href="http://www.qamadness.com/industries/startup-testing/">Start-ups</a></li>
+	<li id="menu-item-11976" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11976"><a href="http://www.qamadness.com/industries/software-development-testing/">Software Development</a></li>
+	<li id="menu-item-11811" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11811"><a href="http://www.qamadness.com/industries/ai-big-data-testing/">AI, Big Data</a></li>
+	<li id="menu-item-11973" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11973"><a href="http://www.qamadness.com/industries/blockchain-testing/">Blockchain</a></li>
+	<li id="menu-item-11974" class="menu-item menu-item-type-post_type menu-item-object-industries menu-item-11974"><a href="http://www.qamadness.com/industries/education-testing/">E-learning</a></li>
+</ul>
+</li>
+<li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-449"><a href="http://www.qamadness.com/case_studies/">Case Studies</a></li>
+<li id="menu-item-19397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19397" style="height: 21px;"><a href="http://www.qamadness.com/resources/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-518" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-518"><a href="http://www.qamadness.com/blog/">Blog</a></li>
+	<li id="menu-item-19421" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19421"><a href="https://www.qamadness.com/knowledge-base/">Knowledge Base</a></li>
+</ul>
+</li>
+</ul></div>
+
+
+        <div class="mobile-btn-wrap">
+
+          <a href="https://www.qamadness.com/contact-us/" class="started-btn started-btn-mobile">Contact Us</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <a href="https://www.qamadness.com/contact-us/" class="started-btn">Contact Us</a>
+
+  </div>
+
+</header>
+		
+
+
+<section class="page-header without-image   ">
+      <div class="container">
+
+      <div class="row">
+
+        <div class="content " style="top: 660.877px;">
+
+
+
+          
+
+
+          
+
+
+          
+
+
+          
+
+
+          
+
+
+          
+        </div>
+
+      </div>
+
+    </div>
+
+  
+
+  
+</section>
+
+
+
+
+
+<div class="single-post-section">
+
+  <div class="container posts-container">
+
+
+
+    
+      <div class="posts-breadcrumbs">
+
+        <i class="fa fa-home" aria-hidden="true"></i>
+
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+        <a href="http://www.qamadness.com/blog/">Blog &nbsp;</a> <i class="fa fa-angle-right" aria-hidden="true"></i> What Is a Test Plan and How to Write One?
+      </div>
+
+
+
+      
+
+
+      <div class="single-post-banner" style="background: url(http://www.qamadness.com/wp-content/uploads/2021/03/shutterstock_15387334281-scaled.jpg) center center no-repeat;"></div>
+
+
+
+    
+
+
+    <div class="row">
+
+      
+
+
+        <div class="col-md-6 col-lg-2 col-xl-3 post-banners">
+
+          
+          
+          
+
+        </div>
+
+
+
+        <div class="single-inner-posts  col-lg-8 col-xl-6">
+
+          <article class="post-17336 post type-post status-publish format-standard has-post-thumbnail hentry category-testing">
+
+            <div class="entry-content">
+
+              <div class="single-title-block">
+
+                <h1 class="post-title">
+
+                  What Is a Test Plan and How to Write One?
+                </h1>
+
+                <div class="meta-block">
+
+                  <div class="time">
+
+                    <span class="publish-date">March 4, 2021</span>
+                    <span>Reading time: 10 min</span>
+
+                    
+                  </div>
+
+
+
+                  <ul class="social-list">
+
+                    
+                    
+                      <li class="social-item">
+
+                        <a href="https://twitter.com/Qamadness" target="_blank">
+
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+
+                        </a>
+
+                      </li>
+
+                    
+                    
+                      <li class="social-item">
+
+                        <a href="https://www.facebook.com/qa.madnesss" target="_blank">
+
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+
+                        </a>
+
+                      </li>
+
+                    
+                    
+                    
+                    
+                      <li class="social-item">
+
+                        <a href="https://www.linkedin.com/company/qamadness/" target="_blank">
+
+                          <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+                        </a>
+
+                      </li>
+
+                    
+                  </ul>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="article-content">
+
+                <p>Well-written documentation lies at the core of an efficient QA process. Documentation brings structure and logic to the testing activities. In a way, it unites project team members around the same goal, providing a clear understanding of the hierarchy, tasks, and expected outcomes. </p>
+<p>One of such documents is a Test Plan. In this article, you will learn: </p>
+<ul class="checkmark">
+<li>what a software Test Plan iswhat a software Test Plan is;</li>
+<li>how it is different from a Test Strategy;</li>
+<li>what role it plays in the project;</li>
+<li>types of plans;</li>
+<li>why a team needs a Test Plan;</li>
+<li>and, most importantly, how to draw it up.</li>
+</ul>
+<p>Before proceeding to the definitions and explanation, we’d like to explain one more important term from the QA field – a <strong>test artifact</strong>. Test artifacts are by-products generated during the software testing process and shared with the project team. Simply put, these are documents that bridge the communication gap between all the members. Now, let’s move to a Test Plan and its specifics. </p>
+<h3 style="font-size: 1.40rem; font-weight: 500;">What Is a Test Plan?</h3>
+<p>A Test Plan is a test artifact describing actions that will occur during the testing process – from the development strategy to criteria for finding errors. It also outlines the logic of completing the tasks, features risk assessment, and explains scenarios of effective resolution of those risks.</p>
+<h3 style="font-size: 1.40rem; font-weight: 500;">Test Plan Structure</h3>
+<p>A Test Plan has a clearly defined structure established by the IEEE 829 – the industry standard for software and system documentation. Thus, you can prepare a template and use it for every project, filling it with specific data. </p>
+<p>Building a Test Plan document based on the IEEE 829 standard has many benefits. First and foremost, familiarity with the document structure makes it easier to write and use a Test Plan. The IEEE 829 standard eliminates any futile discussions about what to include and in what order. Instead, a Team Lead and QA Engineers focus on other activities. </p>
+<p>So, according to the IEEE 829 standard, a Test Plan should consist of 19 items: </p>
+<ol class="round-num">
+<li>
+<p>Test Plan Identifier</p>
+</li>
+<li>
+<p>References</p>
+</li>
+<li>
+<p>Introduction</p>
+</li>
+<li>
+<p>Test Items</p>
+</li>
+<li>
+<p>Software Risk Issues</p>
+</li>
+<li>
+<p>Features to Be Tested</p>
+</li>
+<li>
+<p>Features Not to Be Tested</p>
+</li>
+<li>
+<p>Approach</p>
+</li>
+<li>
+<p>Item Pass/Fail Criteria</p>
+</li>
+<li>
+<p>Suspension Criteria and Resumption Requirements</p>
+</li>
+<li>
+<p>Test Deliverables</p>
+</li>
+<li>
+<p>Remaining Test Tasks</p>
+</li>
+<li>
+<p>Environmental Needs</p>
+</li>
+<li>
+<p>Staffing and Training Needs</p>
+</li>
+<li>
+<p>Responsibilities</p>
+</li>
+<li>
+<p>Schedule</p>
+</li>
+<li>
+<p>Planning Risks and Contingencies</p>
+</li>
+<li>
+<p>Approvals</p>
+</li>
+<li>
+<p>Glossary</p>
+</li>
+</ol>
+<h4 style="font-size: 1.20rem; font-weight: 400;">1) Test Plan Identifier</h4>
+<p>In this section, we add the QA provider’s name and company logo, the name of the document, its version, and the year of creation. In other words, it is the title page of your Test Plan. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">2) References</h4>
+<p>The next step is to include the history of the document. For this, add the Table of Changes. It should contain the following columns: </p>
+<ul class="checkmark">
+<li>date;</li>
+<li>version;</li>
+<li>description;</li>
+<li>and author.</li>
+</ul>
+<p>With this table, a team can record and track changes to manage the document and the process it describes efficiently. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">3) Introduction</h4>
+<p>Here, we briefly state what we are going to do during the project. The introduction is a note to a client. In a couple of sentences, describe what services the QA team will provide and why. For example: </p>
+<blockquote class="ludwig"><p>
+ 	Our company provides Functional and UI testing to detect bugs in the software product before the release. We perform the detailed testing of the stated functionality to help achieve the set business goals for your software product.
+</p></blockquote>
+<p>Include all the types of testing you agreed to cover, but don’t go into detail. It is enough to generalize at this stage. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">4) Test Items</h4>
+<p>Test Items are general functionality to be tested – for example, installation, registration, checkout, etc. In a way, it is a short description of the content of the Test Plan. Later on, each of the items will be explained in detail. The list can be expanded or shortened depending on a task or type of testing. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">5) Software Risk Issues</h4>
+<p>In this section, we describe the risks a team may face during testing. For example, if a deadline is set for the summer period, it is reasonable to assume that people may take vacations, and the date may be delayed. You should consider both human resources and tech aspects, mentioning everything significant in the document. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">6) Features to be Tested</h4>
+<p>This part covers what the majority imagines a Test Plan should present – a more precise list of features to inspect during a specified time. For example, we mentioned the checkout functionality in Test Items. In Features to Be Tested, we should list separate components of the flow: entering delivery information, choosing a payment method, order confirmation, etc. As for the timing, a client and a <a href="http://www.qamadness.com/" rel="noopener noreferrer" target="_blank">QA company</a> discuss it before documentation writing. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">7) Features not to be Tested</h4>
+<p>Here, you list the features that a QA team is not going to test for a particular reason. It doesn’t matter why you don’t cover this scope. Just don’t forget to state what features remain out of your tasks and are a client’s responsibility. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">8) Approach</h4>
+<p>Then, we describe the techniques and types of testing we are going to use. We also include test cases in this section. Therefore, a client can get a complete picture of the testing activities. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">9) Item Pass/Fail Criteria</h4>
+<p>Each Test Case will be assigned ‘Pass’ or ‘Fail’ state depending on two criteria:</p>
+<ul class="checkmark">
+<li>the existence and severity of bugs;</li>
+<li>the level of successfully executed requirements.</li>
+</ul>
+<p>And don’t forget to identify entry and exit criteria for the testing. They mark the beginning and the end of the testing process. </p>
+<p>An entry criterion describes what needs to be done before testing begins. For example, you may need to have: </p>
+<ul class="checkmark">
+<li>finalized reference documents;</li>
+<li>a software product packaged the way customers will get it;</li>
+<li>specific software utilities, configuration files, or data;</li>
+<li>product requirements and other documentation, etc.</li>
+</ul>
+<p>The entry criteria reveal test readiness or unreadiness. It will be helpful to make a list of items to use as inputs and request the materials necessary for running tests. </p>
+<p>An exit criterion describes what you consider necessary to complete a test. QA teams often try to make exit criteria a condition for software delivery, but it is not realistic. This decision is for a Product Owner (or another person in charge) to make. </p>
+<p>Here’s an example of test exit criteria: </p>
+<blockquote class="ludwig"><p>
+ 	All scheduled tests have been completed, all fixed defects have been checked, notifications of all new defects found have been issued. All failed points, such as failure of a certain set of tests due to hardware malfunction, have been documented.
+</p></blockquote>
+<h4 style="font-size: 1.20rem; font-weight: 400;">10) Suspension Criteria and Resumption Requirements</h4>
+<p>The suspension/resumption criteria describe what happens if it is impossible to continue testing due to the defects. In other words, if things go so bad that the planned testing activities cannot go on, they have to stop until after the defect elimination.</p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">11) Test Deliverables</h4>
+<p>As the name suggests, we inform a client about the materials they will receive to witness the results of the work. Test deliverables usually show testing outcomes in a form of metrics: the number of tests completed, bugs found, etc. In a way, metrics are numerical indicators of quality, though it shouldn’t be the only criterion for estimating the work done.</p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">12) Remaining Test Tasks</h4>
+<p>A SDLC may be unpredictable. Sometimes it takes more time than initially expected to test a product and deal with risks. If the deadlines are tight, some parts of the functionality may remain untested. In this case, a team still includes left-out tasks in a Test Plan. Also, this section can describe the work scope to cover in case all the tasks are closed before the deadline.</p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">13) Environmental Needs</h4>
+<p>In general, this section summarizes the needs for testing hardware. Here we mention the tools used for testing. If needed, you can describe the equipment and its features. It is necessary if, for example, a project will require exploiting a VR kit, some specific devices that need to be purchased, etc.</p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">14) Staffing and Training Needs</h4>
+<p>If we get a task to test software for nuclear reactors, it is likely that the team won’t fully understand the specifics. Exaggerations aside, when the team is to test a project from an industry they are not familiar with, it makes sense to have a lecture or short course from experts. It will help to understand the particularities of a project and make the work more efficient. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">15) Responsibilities</h4>
+<p>This clause describes the areas of responsibility of each member of the QA team. A convenient way of providing this information is a table with three columns – name, position, and responsibility.</p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">16) Schedule</h4>
+<p>A Test Plan should also feature project deadlines. The team needs to evaluate the speed – that is, the amount of time the testing will need to finish testing. If there are several testing phases, clarify their order and timing. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">17) Planning Risks and Contingencies</h4>
+<p>This section overlaps with the Software Risk Issues mentioned above. In addition to the list of risks, we provide explanations on how to handle those risks and what to do in force majeure circumstances.</p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">18) Approvals</h4>
+<p>Every test document features the names or positions of the specialist who prepared it, those who should approve it and give the green light to the team to use it. </p>
+<h4 style="font-size: 1.20rem; font-weight: 400;">19) Glossary</h4>
+<p>Finally, there is a section where you can explain the core concepts used during the Test Plan writing. A Glossary helps to prevent misinterpretation of the used terminology.</p>
+<h3 style="font-size: 1.40rem; font-weight: 500;">Types of Test Plans</h3>
+<p>Despite the standard structure, there are several types of test plans. The differentiation is based on the particularities of the described tasks and the scope of work. To be more specific, QA teams tend to use the following classification:</p>
+<ul class="round">
+<li>Level-specific test plans – unit, integration, system, and acceptance test plans.</li>
+<li>Type-specific test plans – functional test plan, performance test plan, usability test plan, automation test plan, etc.</li>
+<li>Master Test Plan – a comprehensive QA Test Plan. It features high-level information, structures the testing process in detail, and rarely undergoes changes or revisions.</li>
+</ul>
+<p>Compared to a Test Plan, a Master Test Plan is more static. That’s the key difference. As a rule, a project team uses one Master Test Plan and several shorter Test Plans for different levels or types of testing that describe individual modules of the same application.</p>
+<p>Regardless of the type, you can create a Test Plan without using any specific tools. You can come across the phrase “Test Plan management tools,” but the wording is a bit off here. A Test Plan is a <em>document</em>, and the only tool you need to manage it is a text editor. Usually, people actually refer to test management tools, like TestRail, Testpad, QMetry, Kualitee, etc. Maybe, it’s another popular tool, Azure DevOps Test Plans, that causes this confusion.</p>
+<h3 style="font-size: 1.40rem; font-weight: 500;">Test Plan and Test Strategy – What’s the Difference?</h3>
+<p>Many find it complicated to tell the difference between a Test Strategy and a Test Plan in software testing. Nevertheless, these are two different documents. In short, a Test Plan is more detailed and covers more aspects than a Test Strategy. The latter is often used at the organizational level and rarely changes. Meanwhile, a Test Plan is more dynamic and used at the project level. A Strategy is usually a part of a Plan. </p>
+<p>There is also a QA strategy that stretches beyond testing and encompasses other quality assurance activities and methodologies. You can learn more about what’s inside a <a href="https://www.qamadness.com/qa-strategy-whats-inside/" rel="noopener noreferrer" target="_blank">QA strategy</a> in one of our previous posts. </p>
+<h3 style="font-size: 1.40rem; font-weight: 500;">To Sum Up</h3>
+<p>As you can see, a Test Plan is voluminous, often difficult to write, but a crucial testing artifact. It guides the team through a well-structured testing process, preventing a lot of stressful situations and misunderstandings. Moreover, a Test Plan helps team members stay on the same page since stakeholders and developers can have access to it.</p>
+<p>Test Plan writing requires strong analytical skills, attention to detail, and the ability to think several moves ahead. Though complicated to develop, the result always pays out. So, even if documentation writing seems less interesting than testing, only together they make the QA process efficient.</p>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+
+        <div class="col-md-6 col-lg-2 col-xl-3 post-banners">
+
+          
+          
+          
+        </div>
+
+      
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+  <div class="posts-container-wrap   recent_posts-slider-wrap">
+
+    <div class="container">
+
+      <h2 class="section-title">Latest Posts</h2>
+
+    </div>
+
+
+
+    <div class="container posts-container">
+
+      <div class="recent_posts-slider news-list">
+
+        <div class="slider-container swiper-container swiper-container-horizontal">
+
+          <div class="swiper-wrapper">
+
+
+
+            
+
+
+              <div class="swiper-slide swiper-slide-active" style="width: 350px; margin-right: 30px;">
+
+                <div class="news-item">
+                  <a href="http://www.qamadness.com/what-is-test-documentation-and-why-do-we-need-it/" class="news-item-link"></a>
+
+                  <span class="img-wrap" style="background: url(http://www.qamadness.com/wp-content/uploads/2021/08/shutterstock_288746588-scaled.jpg) center center no-repeat;">
+
+                  </span>
+
+
+
+                  <h4 class="latest_post_title">What Is Test Documentation and Why Do We Need It?</h4>
+
+                  <div class="time">
+
+                    <span class="publish-date">August 26, 2021</span>
+                    <span>Reading time: 5 min</span>
+
+                    
+                  </div>
+
+
+
+                  <div class="excerpt">Just like in any other process, documentation in QA helps teams organize their work. It helps to standardize the process, clarify the terminology, establish milestones, and keep all team members posted. Below, you</div>
+
+
+
+                  <a href="http://www.qamadness.com/what-is-test-documentation-and-why-do-we-need-it/" class="read-more">
+
+                    Read more<i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            
+
+
+              <div class="swiper-slide swiper-slide-next" style="width: 350px; margin-right: 30px;">
+
+                <div class="news-item">
+                  <a href="http://www.qamadness.com/mobile-application-testing-process/" class="news-item-link"></a>
+
+                  <span class="img-wrap" style="background: url(http://www.qamadness.com/wp-content/uploads/2021/08/mobile-app-testing.jpg) center center no-repeat;">
+
+                  </span>
+
+
+
+                  <h4 class="latest_post_title">Mobile Application Testing Process: Step-By-Step Explanation</h4>
+
+                  <div class="time">
+
+                    <span class="publish-date">August 12, 2021</span>
+                    <span>Reading time: 9 min</span>
+
+                    
+                  </div>
+
+
+
+                  <div class="excerpt">As the internet penetration increases and smartphones become more affordable, the use of mobile applications globally also increases. Probably, there’s an application for everything nowadays – from government and banking services to fitness,</div>
+
+
+
+                  <a href="http://www.qamadness.com/mobile-application-testing-process/" class="read-more">
+
+                    Read more<i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            
+
+
+              <div class="swiper-slide" style="width: 350px; margin-right: 30px;">
+
+                <div class="news-item">
+                  <a href="http://www.qamadness.com/your-guide-to-understanding-risk-based-testing/" class="news-item-link"></a>
+
+                  <span class="img-wrap" style="background: url(http://www.qamadness.com/wp-content/uploads/2021/08/shutterstock_206505691-scaled-e1628151705723.jpg) center center no-repeat;">
+
+                  </span>
+
+
+
+                  <h4 class="latest_post_title">Your Guide to Understanding Risk-Based Testing</h4>
+
+                  <div class="time">
+
+                    <span class="publish-date">August 5, 2021</span>
+                    <span>Reading time: 7 min</span>
+
+                    
+                  </div>
+
+
+
+                  <div class="excerpt">The goal of risk-based testing is to concentrate testing on key functions and spend more time on them. It is possible to manage the test process through intelligent evaluation and convey the predicted</div>
+
+
+
+                  <a href="http://www.qamadness.com/your-guide-to-understanding-risk-based-testing/" class="read-more">
+
+                    Read more<i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            
+
+
+              <div class="swiper-slide" style="width: 350px; margin-right: 30px;">
+
+                <div class="news-item">
+                  <a href="http://www.qamadness.com/testing-in-production-risks-benefits-and-best-practices/" class="news-item-link"></a>
+
+                  <span class="img-wrap" style="background: url(http://www.qamadness.com/wp-content/uploads/2021/07/shutterstock_1043501293-scaled.jpg) center center no-repeat;">
+
+                  </span>
+
+
+
+                  <h4 class="latest_post_title">Testing in Production: Risks, Benefits, and Best Practices</h4>
+
+                  <div class="time">
+
+                    <span class="publish-date">July 29, 2021</span>
+                    <span>Reading time: 7 min</span>
+
+                    
+                  </div>
+
+
+
+                  <div class="excerpt">Testing in production might sound like a developer or tester’s worst nightmare. However, in the tech industry, testing in production is becoming more and more prevalent even though many people are still skeptical</div>
+
+
+
+                  <a href="http://www.qamadness.com/testing-in-production-risks-benefits-and-best-practices/" class="read-more">
+
+                    Read more<i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            
+
+
+              <div class="swiper-slide" style="width: 350px; margin-right: 30px;">
+
+                <div class="news-item">
+                  <a href="http://www.qamadness.com/fundamentals-of-ehealth-software-testing/" class="news-item-link"></a>
+
+                  <span class="img-wrap" style="background: url(http://www.qamadness.com/wp-content/uploads/2021/07/shutterstock_1754979098-scaled.jpg) center center no-repeat;">
+
+                  </span>
+
+
+
+                  <h4 class="latest_post_title">Fundamentals of eHealth Software Testing</h4>
+
+                  <div class="time">
+
+                    <span class="publish-date">July 22, 2021</span>
+                    <span>Reading time: 6 min</span>
+
+                    
+                  </div>
+
+
+
+                  <div class="excerpt">The traditional interactions between patients, doctors, and pharmaceutical companies are no longer relevant in the digital age. See your doctor, get a prescription, take your meds, and report back to your doctor if</div>
+
+
+
+                  <a href="http://www.qamadness.com/fundamentals-of-ehealth-software-testing/" class="read-more">
+
+                    Read more<i class="fa fa-angle-right" aria-hidden="true"></i>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            
+          </div>
+
+        </div>
+
+
+
+        <div class="swiper-controls recent_posts-controls">
+
+          <span class="swiper-button-prev swiper-button-disabled"></span>
+
+          <span class="swiper-button-next"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <p class="bg-text">Blog</p>
+
+  </div>
+
+    
+    
+<footer class="section content-info">
+
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="slogan-block">
+
+        <a class="brand" href="http://www.qamadness.com/">
+
+          <img src="./What Is a Test Plan and How to Write One_ - QA Madness_files/Logo.svg" alt="">
+
+        </a>
+
+
+
+        
+          <p class="slogan">
+
+            We assist companies to increase the quality of product deliverables by improving ability to release products quicker and more often. Call us: +370(614)87115 <br><br>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+          </p>
+
+        
+
+
+        <ul class="social-list">
+
+          
+          
+            <li class="social-item">
+
+              <a href="https://twitter.com/Qamadness" target="_blank">
+
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+
+              </a>
+
+            </li>
+
+          
+          
+            <li class="social-item">
+
+              <a href="https://www.facebook.com/qa.madnesss" target="_blank">
+
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+
+              </a>
+
+            </li>
+
+          
+          
+          
+          
+            <li class="social-item">
+
+              <a href="https://www.linkedin.com/company/qamadness/" target="_blank">
+
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+              </a>
+
+            </li>
+
+          
+
+
+        </ul>
+
+      </div>
+
+
+
+      <div class="sign-up-form-block">
+
+        <h6>Find clients’ review on:</h6>
+
+
+        <div class="logos-wrap">
+
+
+                      <a href="https://clutch.co/profile/qa-madness" target="_blank" rel="noopener noreferrer">
+              <img class="review_logo" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/clutch.png" alt="https://clutch.co/profile/qa-madness">
+            </a>
+
+
+                      <a href="https://www.g2.com/products/qa-madness/reviews" target="_blank" rel="noopener noreferrer">
+              <img class="review_logo" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/g2.png" alt="https://www.g2.com/products/qa-madness/reviews">
+            </a>
+
+
+                      <a href="https://www.gartner.com/reviews/market/application-testing-services-worldwide/vendor/qa-madness/product/qa-madness-application-testing-services-worldwide" target="_blank" rel="noopener noreferrer">
+              <img class="review_logo" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/gartner.png" alt="https://www.gartner.com/reviews/market/application-testing-services-worldwide/vendor/qa-madness/product/qa-madness-application-testing-services-worldwide">
+            </a>
+
+
+                      <a href="https://www.goodfirms.co/company/qa-madness" target="_blank" rel="noopener noreferrer">
+              <img class="review_logo" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/goodfirms.png" alt="https://www.goodfirms.co/company/qa-madness">
+            </a>
+
+
+          
+        </div>
+
+      </div>
+
+
+
+      <div class="footer-menu-block">
+
+        <div class="menu-wrap">
+
+          <h6>Menu</h6><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="nav"><li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="http://www.qamadness.com/services/">Services</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://www.qamadness.com/solutions/">Coverage</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://www.qamadness.com/industries/">Industries</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://www.qamadness.com/company/">Company</a></li>
+<li id="menu-item-14681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14681"><a href="http://www.qamadness.com/case_studies/">Case Studies</a></li>
+</ul></div>
+        </div>
+
+
+
+        <div class="information-wrap">
+
+          <h6>Information</h6><div class="menu-footer-information-nav-container"><ul id="menu-footer-information-nav" class="nav"><li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="http://www.qamadness.com/about-us/">About Us</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-41"><a href="http://www.qamadness.com/blog/">Blog</a></li>
+<li id="menu-item-13206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13206"><a href="http://www.qamadness.com/outsourcing/">Outsourcing</a></li>
+<li id="menu-item-14679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14679"><a href="http://www.qamadness.com/cookies-policy/">Cookies Policy</a></li>
+<li id="menu-item-14680" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-14680"><a href="http://www.qamadness.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="footer-bottom">
+
+    <div class="container">
+
+      <div class="footer-bottom-content">
+
+        <p class="copy">© QA Madness, 2021. All rights reserved.</p>
+
+
+
+        <div class="up-btn-wrap">
+
+          <a href="http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/#" class="back-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i>Up</a>
+
+        </div>
+
+
+
+        <p class="made-text">
+
+          
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer><script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/wp-embed.min.js.download" id="wp-embed-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/fslightbox.js.download" id="fslightbox-js"></script>
+<link rel="stylesheet" id="wp-block-library-css" href="./What Is a Test Plan and How to Write One_ - QA Madness_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="./What Is a Test Plan and How to Write One_ - QA Madness_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-ulike-css" href="./What Is a Test Plan and How to Write One_ - QA Madness_files/wp-ulike.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpcf7-redirect-script-frontend-css" href="./What Is a Test Plan and How to Write One_ - QA Madness_files/wpcf7-redirect-frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-notice-front-css" href="./What Is a Test Plan and How to Write One_ - QA Madness_files/front.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="fancybox-css" href="./What Is a Test Plan and How to Write One_ - QA Madness_files/jquery.fancybox.min.css" type="text/css" media="screen">
+<link crossorigin="anonymous" rel="stylesheet" id="font-awesome-css" href="./What Is a Test Plan and How to Write One_ - QA Madness_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="sage/css-css" href="./What Is a Test Plan and How to Write One_ - QA Madness_files/main.css" type="text/css" media="all">
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/wp-polyfill.min.js.download" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="http://www.qamadness.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="http://www.qamadness.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="http://www.qamadness.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="http://www.qamadness.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="http://www.qamadness.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="http://www.qamadness.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="http://www.qamadness.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"http:\/\/www.qamadness.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/index.js.download" id="contact-form-7-js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","954701575317255");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=954701575317255&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:1153462,hjsv:6};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><script type="text/javascript" id="" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/api.js.download"></script>
+
+<script type="text/javascript" id="">!function(d,e,f,a,b,c){d.qp||(a=d.qp=function(){a.qp?a.qp.apply(a,arguments):a.queue.push(arguments)},a.queue=[],b=document.createElement(e),b.async=!0,b.src=f,c=document.getElementsByTagName(e)[0],c.parentNode.insertBefore(b,c))}(window,"script","https://a.quora.com/qevents.js");qp("init","17e91c55654b45819e4cef38d11e98b2");qp("track","ViewContent");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/17e91c55654b45819e4cef38d11e98b2/pixel?tag=ViewContent&amp;noscript=1"></noscript>
+<meta name="ahrefs-site-verification" content="5d7f71e1058b06d78e16c2f1f8df7eab333528c57d8d32d09389bd2539a6b184"><script type="text/javascript" id="">(function(){window.ldfdr=window.ldfdr||{};(function(c,d,a,b){function f(a){var e=c.createElement(d);e.src=a;setTimeout(function(){b.parentNode.insertBefore(e,b)},1)}b=c.getElementsByTagName(d)[0];f(a)})(document,"script","https://sc.lfeeder.com/lftracker_v1_bElvO73A0GKaZMqj.js")})();</script>
+<script type="text/javascript" id="hs-script-loader" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/3076879.js(1).download"></script><script type="text/javascript" id="" src="http://adpxl.co/uh60gh01/an.js"></script><script type="text/javascript" id="">var leady_track_key="p4cK9TmyH4DxMwh5";(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://t.leady.com/"+leady_track_key+"/L.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script><meta name="facebook-domain-verification" content="eak75e1yaumkedzt4kfez2mo8knsfw"> 
+
+<script type="text/javascript" id="leadin-script-loader-js-js-extra">
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"post","leadinPluginVersion":"8.4.90"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/3076879.js(2).download" async="" defer="" id="hs-script-loader"></script>
+<script type="text/javascript" id="wp_ulike-js-extra">
+/* <![CDATA[ */
+var wp_ulike_params = {"ajax_url":"http:\/\/www.qamadness.com\/wp-admin\/admin-ajax.php","notifications":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/wp-ulike.min.js.download" id="wp_ulike-js"></script>
+<script type="text/javascript" id="wpcf7-redirect-script-js-extra">
+/* <![CDATA[ */
+var wpcf7r = {"ajax_url":"http:\/\/www.qamadness.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/wpcf7-redirect-frontend-script.js.download" id="wpcf7-redirect-script-js"></script>
+<script type="text/javascript" id="cookie-notice-front-js-extra">
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"http:\/\/www.qamadness.com\/wp-admin\/admin-ajax.php","nonce":"7076a7bdeb","hideEffect":"slide","position":"top","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2147483647","cookieTimeRejected":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"0","refuse":"1","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"0"};
+/* ]]> */
+</script>
+<script async="" type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/front.min.js.download" id="cookie-notice-front-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/jquery.fancybox.min.js.download" id="jquery-fancybox-js"></script>
+<script type="text/javascript" id="jquery-fancybox-js-after">
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'showCloseButton':true,'margin':20,'centerOnScroll':false,'enableEscapeButton':true,'autoScale':true };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery('.nofancybox,a.wp-block-file__button,a.pin-it-button,a[href*="pinterest.com/pin/create"],a[href*="facebook.com/share"],a[href*="twitter.com/share"]').addClass('nolightbox');
+/* IMG */
+var fb_IMG_select='a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpg"]:not(.nolightbox),a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpeg"]:not(.nolightbox),a[href*=".png"]:not(.nolightbox,li.nolightbox>a),area[href*=".png"]:not(.nolightbox),a[href*=".webp"]:not(.nolightbox,li.nolightbox>a),area[href*=".webp"]:not(.nolightbox)';
+jQuery(fb_IMG_select).addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,li.fancybox a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false}))});};
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+};
+var easy_fancybox_auto=function(){setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+jQuery(easy_fancybox_auto);
+</script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/jquery.easing.min.js.download" id="jquery-easing-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/jquery.mousewheel.min.js.download" id="jquery-mousewheel-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/api.js(1).download" id="google-recaptcha-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-extra">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6Ld6XJ0UAAAAAG2feU_BooJDgTmg0erqEHdiVlRj","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/index.js(1).download" id="wpcf7-recaptcha-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/comment-reply.min.js.download" id="comment-reply-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/imagesloaded.min.js.download" id="imagesloaded-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/masonry.min.js.download" id="masonry-js"></script>
+<script type="text/javascript" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/main.js.download" id="sage/js-js"></script>
+
+		<!-- Cookie Notice plugin v2.1.3 by Hu-manity.co https://hu-manity.co/ -->
+		<div id="cookie-notice" role="banner" class="cookie-revoke-hidden cn-position-top cn-effect-slide cookie-notice-visible" aria-label="Cookie Notice" style="background-color: rgba(109,95,156,1);"><div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button wp-default button" aria-label="Ok">Ok</a><a href="http://www.qamadness.com/what-is-a-test-plan-and-how-to-write-one/#" id="cn-refuse-cookie" data-cookie-set="refuse" class="cn-set-cookie cn-button wp-default button" aria-label="No">No</a><a href="http://www.qamadness.com/privacy-policy/" target="_blank" id="cn-more-info" class="cn-more-info cn-button wp-default button" aria-label="Privacy policy">Privacy policy</a></span><a href="javascript:void(0);" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" aria-label="Ok"></a></div>
+			
+		</div>
+		<!-- / Cookie Notice plugin -->  
+
+<iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;" __idm_frm__="118" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/saved_resource.html"></iframe><div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; position: fixed; visibility: hidden; display: block; transition: right 0.3s ease 0s; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/anchor.html" width="256" height="60" role="presentation" name="a-ft7o9jagu0y2" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" __idm_frm__="123" src="./What Is a Test Plan and How to Write One_ - QA Madness_files/saved_resource(1).html"></iframe></div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap" class="fancybox-ie"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div id="hubspot-messages-iframe-container" class="widget-align-right" style="width: 100px; height: 96px;"><div class="shadow-container"></div><iframe src="./What Is a Test Plan and How to Write One_ - QA Madness_files/226d9da4772a41c198823502eb5203c2.html" title="chat widget" allowfullscreen=""></iframe></div><iframe src="./What Is a Test Plan and How to Write One_ - QA Madness_files/globalstorage.html" style="position: absolute; width: 1px; height: 1px; left: -9999px;"></iframe><style type="text/css">.txt-rotate > .wrap { border-right: 0.08em solid #666 }</style></body></html>
